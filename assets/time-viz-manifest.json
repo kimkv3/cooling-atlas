@@ -1,0 +1,199 @@
+{
+  "status": "review_watermark_retained",
+  "decision": "31 / 2026-10-20",
+  "display_unit": "시간량/년",
+  "quantity_label": "냉기 자원",
+  "code_commit_sha": "69ab95e04c7715dd8d189b16ba473aaa332aa54f",
+  "renderer_sha256": "sha256:f22b40768ad85882e2cd537f04b98a9b4a7c4302fa60aa215f740eeb7f5b05b5",
+  "shared_renderer_sha256": "sha256:d06b193be3988d8f85ec10585e95381fba9b370fcf4744e8141034e98c8f3f40",
+  "palette_sha256": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
+  "colors": {
+    "loss": "#b2182b",
+    "gain": "#2879bd",
+    "neutral": "#ffffff"
+  },
+  "font_sha256": "sha256:3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93",
+  "font": "Pretendard v1.3.9 / OFL 1.1",
+  "input_provenance": {
+    "generated_at": "2026-09-06T17:09:22.284600+00:00",
+    "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+    "source_year_range": [
+      1961,
+      2020
+    ],
+    "baseline_period": [
+      1961,
+      1990
+    ],
+    "current_period": [
+      1991,
+      2020
+    ],
+    "code_commit_sha": "4366c4d8f3e5eb09bcda7c03698bd5250180e872",
+    "metric_version": "metric-v0.1",
+    "scenario_id": "waterside_reference_v1",
+    "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc",
+    "dataset_version": "rok-center-v1",
+    "source_provenance": {
+      "generated_at": "2026-09-04T07:59:07.323182+00:00",
+      "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+      "source_year_range": [
+        1961,
+        2020
+      ],
+      "baseline_period": [
+        1961,
+        1990
+      ],
+      "current_period": [
+        1991,
+        2020
+      ],
+      "code_commit_sha": "9927b5439f397d46955d58d5fcafe79392f68074",
+      "metric_version": "metric-v0.1",
+      "scenario_id": "waterside_reference_v1",
+      "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc"
+    },
+    "source_artifact_sha256": {
+      "korea_grid_standard_comparison.geoparquet": "sha256:a83af042dfff45883515c91a3c996cc2465d71153ef14740190ffdd26564a877",
+      "korea_grid_annual_timeseries.parquet": "sha256:fcd26f8e99740c8f85a30d8f4429ecd40047d4386d993e3b1e2c366c22ee8990",
+      "korea_grid_map.geojson": "sha256:e65599f05cd66848b5446056c56177577655d800011dfda18e3e941a8f26109d"
+    },
+    "boundary_sha256": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "boundary_id": "KOR-ADM0-49999745",
+    "boundary_version": "9469f09",
+    "selection_rule": "EPSG:4326 cell center covered by ADM0 polygon (boundary included); no buffer, no interpolation",
+    "status": "review_candidate_not_public_release",
+    "comparison_contract": {
+      "period_delta": "historical",
+      "sensitivity": "uniform_perturbation"
+    }
+  },
+  "input_sha256": {
+    "manifest.json": "sha256:53f9d447130622fbb50e535a635641894bb4b8862da14021d268c976867ec348",
+    "country_mask.csv": "sha256:8cde11925533d65723535f922178210b52892db9124a30eb318230b7eb648414",
+    "korea_grid_annual_timeseries.parquet": "sha256:ad6a1c2c8b4b39a77f3453448dc7fc102ed07790592c57928eeb24c222a91630"
+  },
+  "prototype_manifest_sha256": "sha256:f54204473598175ef3ec1c76707415aecb095b926de9d0ee0d5f2c2f3a9ce484",
+  "headline": {
+    "baseline": [
+      1961,
+      1990
+    ],
+    "current": [
+      1991,
+      2020
+    ],
+    "loss_h_per_year": 90.90235682209004,
+    "loss_percent": 1.4508652326881184
+  },
+  "included_cells": 1002,
+  "valid_cells": 955,
+  "null_cells": 47,
+  "national_statistic": "unweighted fixed valid-cell mean; not area/population weighted",
+  "decades": [
+    [
+      1961,
+      1970
+    ],
+    [
+      1971,
+      1980
+    ],
+    [
+      1981,
+      1990
+    ],
+    [
+      1991,
+      2000
+    ],
+    [
+      2001,
+      2010
+    ],
+    [
+      2011,
+      2020
+    ]
+  ],
+  "static_maps_and_bars": "nonoverlapping decades; baseline 1961-1970",
+  "map_scale": {
+    "min": -300,
+    "max": 300,
+    "type": "zero-centered symmetric linear",
+    "scope": "all cells and 51 rolling windows",
+    "projection": "EPSG:5179",
+    "interpolation": "none"
+  },
+  "stripes": {
+    "baseline": [
+      1961,
+      1990
+    ],
+    "scale": [
+      -550,
+      550
+    ],
+    "line": "trailing 10 years, min_periods=10; no partial windows"
+  },
+  "animation": {
+    "frames": 51,
+    "fps": 8,
+    "first": [
+      1961,
+      1970
+    ],
+    "last": [
+      2011,
+      2020
+    ],
+    "mean": "trailing 10 complete years",
+    "autoplay": false
+  },
+  "day_equivalent": false,
+  "public_files": [
+    "time-maps-desktop.png",
+    "time-maps-mobile.png",
+    "time-bars-desktop.png",
+    "time-bars-mobile.png",
+    "cooling-stripes-desktop.png",
+    "cooling-stripes-mobile.png",
+    "ench-anomaly-10y.mp4",
+    "ench-anomaly-10y.gif"
+  ],
+  "files": {
+    "time-maps-desktop.png": {
+      "sha256": "sha256:f93b703cdef68976a474c2306d6b3e3c337525bd641bedf65482943b6e431a65",
+      "bytes": 141982
+    },
+    "time-maps-mobile.png": {
+      "sha256": "sha256:f150f99ffd05e59aeb6bb51b4bc3f4c0cfaac4e7df7fc9847d2a2a926bc73f24",
+      "bytes": 123301
+    },
+    "time-bars-desktop.png": {
+      "sha256": "sha256:5bca23474bde7182d29ca53ff32ea21c094e7448adf2473fc36ac370c96cfd24",
+      "bytes": 74956
+    },
+    "time-bars-mobile.png": {
+      "sha256": "sha256:1dd986661f7cbf53a4faa6c1dd3a94b6d8607f39aecd1124de15f47852b9060c",
+      "bytes": 69268
+    },
+    "cooling-stripes-desktop.png": {
+      "sha256": "sha256:f8bea5f292d4343911c12a57c2addc8775462618e0947b4341131d0d9afef8de",
+      "bytes": 148273
+    },
+    "cooling-stripes-mobile.png": {
+      "sha256": "sha256:c3ea287d849a8cd86729f7decb920f2e3ec6619877bf6d109ea8e508b660dbed",
+      "bytes": 138887
+    },
+    "ench-anomaly-10y.mp4": {
+      "sha256": "sha256:d1b92cca8aeb6d15724f7f9787cba2a8a678782b36b3a81e19aae8c380e11f21",
+      "bytes": 305957
+    },
+    "ench-anomaly-10y.gif": {
+      "sha256": "sha256:0e42ecd3fb5dbe0391119976b6ff309f2895f893f7fc518de07d72420a16bfce",
+      "bytes": 1418391
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "status": "review_only_not_public",
-  "render_code_commit_sha": "6c9f041907ae77b5b216a8811fc5f351209b3e70",
+  "render_code_commit_sha": "69ab95e04c7715dd8d189b16ba473aaa332aa54f",
   "input_provenance": {
     "generated_at": "2026-09-06T17:09:22.284600+00:00",
     "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
@@ -61,6 +61,12 @@
   "font_name": "Pretendard",
   "font_sha256": "sha256:3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93",
   "font_policy": "Pretendard v1.3.9 Regular; SIL OFL 1.1; assets/fonts/pretendard/OFL.txt",
+  "palette_sha256": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
+  "colors": {
+    "loss": "#b2182b",
+    "gain": "#2879bd",
+    "neutral": "#ffffff"
+  },
   "projection": "EPSG:5179",
   "extent_xy": [
     719700.0104938236,
@@ -75,7 +81,7 @@
       "sign": 1.0,
       "vmin": 251.72859893515607,
       "vmax": 333.6654091521551,
-      "cmap": "YlOrRd",
+      "cmap": "loss_red",
       "scale_method": "범례: 국내 유효셀 최소-최대 선형 스케일 (0에서 시작하지 않음)",
       "ticks": [
         251.72859893515607,
@@ -89,14 +95,14 @@
       "zero_position": null,
       "valid_cells": 955,
       "null_cells": 47,
-      "sha256": "sha256:cf3d8078b6b50b05428de08a28aa7ad00886f7fdf497d27832b2a0ebb4abffb7"
+      "sha256": "sha256:c00f4b1bddb1b08db8379a9e0e91a23803936f1ccf9d9e12614ba85bc838bf1b"
     },
     "ench-loss": {
       "column": "delta_ench_h_per_year",
       "sign": -1.0,
       "vmin": 0.0,
       "vmax": 130.0,
-      "cmap": "zero_to_loss",
+      "cmap": "loss_red",
       "scale_method": "범례: 0=변화 없음, 손실 방향 선형 스케일",
       "ticks": [
         0.0,
@@ -111,7 +117,7 @@
       "zero_position": 0.0,
       "valid_cells": 955,
       "null_cells": 47,
-      "sha256": "sha256:94aab1916ba39286c0f34a703d77b79e2173eafc82e177023c93742728568464"
+      "sha256": "sha256:a479a398795bd39031a796fcdacb198b059ac15ceb9604b13443ff457dd93a2d"
     },
     "nch20-loss": {
       "column": "delta_nch20_h_per_year",
@@ -134,7 +140,7 @@
       "zero_position": 0.05,
       "valid_cells": 955,
       "null_cells": 47,
-      "sha256": "sha256:2cfc213a8de3f345b8b6e2e27fa2bc36a8e72cf320d236acd98f5bfdd3e4d16b"
+      "sha256": "sha256:87518687db89eea7f650d1fc4a95873062f5121ad4f6eff92597dd4202c7cbd6"
     }
   }
 }

@@ -1,0 +1,226 @@
+{
+  "status": "review_watermark_retained",
+  "generated_at": "2026-10-20T12:48:56.556789+00:00",
+  "source_commit": "4e33ce2921b8ebdb6e786752fa16d0d84c169afe",
+  "source_path": "scripts/render_cooling_3d.py",
+  "source_script_sha256": "sha256:0af4cbd6568d6f3802b33ebef9f61043598b3c34273eaa672a6e3bd9085a8967",
+  "source_pr": "https://github.com/kimkv3/coolness_resource_atlas/pull/12",
+  "adaptation": "B only; shared red/blue palette; site tone; exact final video frame poster",
+  "render_code_commit_sha": "bc0cb5e29e2c5a04dcef39e5fb41aef7c62a0f95",
+  "generator_sha256": "sha256:a3631cb8b8c6303dc0ba51db127af020838f0bc04940ce23530db05737f97026",
+  "palette_sha256": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
+  "input_provenance": {
+    "generated_at": "2026-09-06T17:09:22.284600+00:00",
+    "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+    "source_year_range": [
+      1961,
+      2020
+    ],
+    "baseline_period": [
+      1961,
+      1990
+    ],
+    "current_period": [
+      1991,
+      2020
+    ],
+    "code_commit_sha": "4366c4d8f3e5eb09bcda7c03698bd5250180e872",
+    "metric_version": "metric-v0.1",
+    "scenario_id": "waterside_reference_v1",
+    "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc",
+    "dataset_version": "rok-center-v1",
+    "source_provenance": {
+      "generated_at": "2026-09-04T07:59:07.323182+00:00",
+      "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+      "source_year_range": [
+        1961,
+        2020
+      ],
+      "baseline_period": [
+        1961,
+        1990
+      ],
+      "current_period": [
+        1991,
+        2020
+      ],
+      "code_commit_sha": "9927b5439f397d46955d58d5fcafe79392f68074",
+      "metric_version": "metric-v0.1",
+      "scenario_id": "waterside_reference_v1",
+      "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc"
+    },
+    "source_artifact_sha256": {
+      "korea_grid_standard_comparison.geoparquet": "sha256:a83af042dfff45883515c91a3c996cc2465d71153ef14740190ffdd26564a877",
+      "korea_grid_annual_timeseries.parquet": "sha256:fcd26f8e99740c8f85a30d8f4429ecd40047d4386d993e3b1e2c366c22ee8990",
+      "korea_grid_map.geojson": "sha256:e65599f05cd66848b5446056c56177577655d800011dfda18e3e941a8f26109d"
+    },
+    "boundary_sha256": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "boundary_id": "KOR-ADM0-49999745",
+    "boundary_version": "9469f09",
+    "selection_rule": "EPSG:4326 cell center covered by ADM0 polygon (boundary included); no buffer, no interpolation",
+    "status": "review_candidate_not_public_release",
+    "comparison_contract": {
+      "period_delta": "historical",
+      "sensitivity": "uniform_perturbation"
+    }
+  },
+  "inputs_sha256": {
+    "site/data/rok-center-v1-b1-20260907/korea_grid_annual_timeseries.parquet": "sha256:ad6a1c2c8b4b39a77f3453448dc7fc102ed07790592c57928eeb24c222a91630",
+    "site/data/rok-center-v1-b1-20260907/country_mask.csv": "sha256:8cde11925533d65723535f922178210b52892db9124a30eb318230b7eb648414",
+    "site/data/rok-center-v1-b1-20260907/manifest.json": "sha256:53f9d447130622fbb50e535a635641894bb4b8862da14021d268c976867ec348",
+    "data/reference/boundaries/kor_adm0_geoboundaries_9469f09.geojson": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "assets/fonts/pretendard/Pretendard-Regular.otf": "sha256:3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93"
+  },
+  "configuration": {
+    "variant": "B",
+    "display_unit": "시간량/년",
+    "quantity_label": "냉기 자원",
+    "baseline_period": [
+      1961,
+      1970
+    ],
+    "metric": "ENCH",
+    "unit": "h/year",
+    "selected_cells": 1002,
+    "valid_cells": 955,
+    "all_year_missing_cells": 47,
+    "missing_render": "gray reference-height tile; not zero; excluded from statistics",
+    "height": "window_ENCH - cell_1961_1970_ENCH; signed, no clamp",
+    "aggregation": "10 complete trailing years; 51 windows ending 1970 through 2020",
+    "summary_weighting": "unweighted valid cell mean",
+    "spatial_interpolation": "none; original cell quadrilaterals and shared-edge risers",
+    "temporal_interpolation": "linear transitions between annual windows; not observations",
+    "color": {
+      "quantity": "loss = -delta",
+      "bounds": [
+        -110.0,
+        260.0
+      ],
+      "anchors": {
+        "-110": "#08306b",
+        "0": "#2879bd",
+        "125": "#ffffff",
+        "260": "#b2182b"
+      },
+      "lighting": "disabled"
+    },
+    "camera": {
+      "azimuth_deg": -55,
+      "elevation_deg": 34,
+      "projection": "orthographic"
+    },
+    "z_limits": [
+      -300,
+      150
+    ],
+    "box_aspect": [
+      460,
+      630,
+      340
+    ],
+    "vertical_axis": "h/year, not terrain elevation or physical stored volume",
+    "projection": "EPSG:5179",
+    "autoplay": false,
+    "poster": "MP4 frame 239 (final frame), decoded losslessly to PNG"
+  },
+  "numeric_comparison": [
+    {
+      "period": "1961-1970",
+      "valid_cells": 955,
+      "delta_mean_h_per_year": 0.0,
+      "delta_min_h_per_year": 0.0,
+      "delta_max_h_per_year": 0.0,
+      "mean_cell_relative_pct": 0.0,
+      "min_cell_relative_pct": 0.0,
+      "max_cell_relative_pct": 0.0
+    },
+    {
+      "period": "1971-1980",
+      "valid_cells": 955,
+      "delta_mean_h_per_year": 2.9112338246300657,
+      "delta_min_h_per_year": -87.62704595557989,
+      "delta_max_h_per_year": 70.23440286708592,
+      "mean_cell_relative_pct": 0.04199081684139598,
+      "min_cell_relative_pct": -1.437634796051835,
+      "max_cell_relative_pct": 0.9985418034048165
+    },
+    {
+      "period": "1981-1990",
+      "valid_cells": 955,
+      "delta_mean_h_per_year": -51.98918640061005,
+      "delta_min_h_per_year": -121.89434760397762,
+      "delta_max_h_per_year": 14.884462776777582,
+      "mean_cell_relative_pct": -0.8307580911107824,
+      "min_cell_relative_pct": -1.956653401165351,
+      "max_cell_relative_pct": 0.20775576268109766
+    },
+    {
+      "period": "1991-2000",
+      "valid_cells": 955,
+      "delta_mean_h_per_year": -29.410042164783786,
+      "delta_min_h_per_year": -93.96764002290092,
+      "delta_max_h_per_year": 16.044090531689108,
+      "mean_cell_relative_pct": -0.46460775386151865,
+      "min_cell_relative_pct": -1.455551505457493,
+      "max_cell_relative_pct": 0.30076558893599703
+    },
+    {
+      "period": "2001-2010",
+      "valid_cells": 955,
+      "delta_mean_h_per_year": -128.56536922981303,
+      "delta_min_h_per_year": -220.71828465682302,
+      "delta_max_h_per_year": 9.973415152665439,
+      "mean_cell_relative_pct": -2.0703054164771415,
+      "min_cell_relative_pct": -3.567408681387267,
+      "max_cell_relative_pct": 0.14179478355491956
+    },
+    {
+      "period": "2011-2020",
+      "valid_cells": 955,
+      "delta_mean_h_per_year": -163.809611647657,
+      "delta_min_h_per_year": -255.47015405542152,
+      "delta_max_h_per_year": -53.40393941853381,
+      "mean_cell_relative_pct": -2.632834351597877,
+      "min_cell_relative_pct": -4.191317632788575,
+      "max_cell_relative_pct": -0.7454065578626574
+    }
+  ],
+  "video": {
+    "elapsed_seconds": 7.68,
+    "frame_count": 240,
+    "fps": 24,
+    "duration_seconds": 10,
+    "resolution": [
+      1200,
+      900
+    ],
+    "preview_resolution": [
+      720,
+      540
+    ],
+    "preview_fps": 12,
+    "ffmpeg_version": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers"
+  },
+  "artifacts": {
+    "B_animation.mp4": {
+      "bytes": 783395,
+      "sha256": "sha256:f055e6390a65074582b4e57ed5421ccc3fd071e4b2cedda0acdf568161b8b994"
+    },
+    "B_final.png": {
+      "bytes": 258157,
+      "sha256": "sha256:ed4852d1eced932418a0b88444b155147a531df90e132e81a70b1b91b5d14d37"
+    },
+    "B_preview.gif": {
+      "bytes": 1394192,
+      "sha256": "sha256:3ace699f2c735d305a343d62f494946b24ac9709201d474c867875ff73a79821"
+    },
+    "numeric_comparison.csv": {
+      "bytes": 839,
+      "sha256": "sha256:362955e50371df33e24034666f348c4b5859bd437516c2190aeb3092544e9e21"
+    },
+    "rolling_delta_h_per_year.csv": {
+      "bytes": 646960,
+      "sha256": "sha256:fb73362d765c0b819c916d7a45c5d6ed43829af1f7cfd170c952f7d6987d9361"
+    }
+  }
+}
