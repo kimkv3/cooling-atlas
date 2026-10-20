@@ -1,10 +1,11 @@
 {
   "status": "review_watermark_retained",
   "decision": 32,
-  "code_commit_sha": "8d4ea9bc6f1162cbcff8bdfebf56aa6a2603b1fd",
-  "generator_sha256": "sha256:cbc83bc9207d966185042624929a7034d6d08052c27abd06161a4180a27bbd03",
+  "code_commit_sha": "ece8ec0ffa343e8ab9ec5a160c16b7fe202c73b4",
+  "generator_sha256": "sha256:8aadb1d530d81a0220c499f03f00592e498ba0b76c1695597ad30ff28ec6ddb2",
   "renderer_dependencies_sha256": {
     "cooling_3d.py": "sha256:a3631cb8b8c6303dc0ba51db127af020838f0bc04940ce23530db05737f97026",
+    "solid_geometry.py": "sha256:b79a3adfea64527fffa71361cb9e9b210380888ec49b24497dbc519c0cd52eef",
     "cooling_palette.py": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
     "render_static.py": "sha256:0f0d2241a1a75c701574ea92ab8b930bbc20107fc763ad7c9c77eac650fee9d0",
     "time_viz_proto.py": "sha256:d06b193be3988d8f85ec10585e95381fba9b370fcf4744e8141034e98c8f3f40",
@@ -80,21 +81,50 @@
       "sensitivity": "uniform_perturbation"
     }
   },
+  "design_reference_sha256": "sha256:3dde88326e19703287620be288d4d046cc5b753f5b36c2cdbde3120f0f14d00c",
   "camera": {
-    "elevation": 58,
-    "azimuth": -90,
-    "projection": "orthographic",
+    "elevation": 45,
+    "azimuth": -105,
+    "projection": "perspective",
+    "focal_length": 1.0,
     "box_aspect": [
       460.0,
       630.0,
-      180.0
+      75.27272727272727
     ]
   },
-  "lighting": "disabled; exact 2D colours on tops and risers",
+  "lighting": {
+    "value_faces": "unshaded; exact 2D RGBA",
+    "wall_style": "cell",
+    "walls": "cell RGB * (ambient 0.50 + Lambert 0.35); camera upper-left",
+    "wall_values": "decorative shading, read data colours only on unshaded end faces",
+    "light_vector": [
+      -0.4957291565460993,
+      0.2555868924438591,
+      0.8300168334202531
+    ],
+    "matplotlib_shade": false
+  },
   "background": "#f6f5ef",
-  "geometry": "B step plate; perimeter returns to 0; no interpolation; no filled lid",
+  "geometry": "zero-to-value columns; neutral zero-thickness coastal ribbon; no deep base",
+  "pedestal": {
+    "enabled": false,
+    "top": 0,
+    "bottom": null,
+    "reference_plate_thickness": 0,
+    "rim_width_km": 0.65,
+    "included_cells": 1002,
+    "includes_missing": true,
+    "thickness_has_data_meaning": false,
+    "bottom_ticks": false,
+    "value_face_rule": "original cell value/colour, only coastal vertices inset for rim"
+  },
+  "view_z_limits": [
+    -540.0,
+    150.0
+  ],
   "reference_height": 0,
-  "coastline_height": 0,
+  "coastline": "thin zero-height rim only; no 2D coastline or geographic backdrop",
   "depth_axis": {
     "position_xy_km": [
       300,
@@ -102,15 +132,26 @@
     ],
     "ticks": [
       -400,
-      0
+      0,
+      150
     ],
     "zero_height": 0,
-    "projection": "same world-to-screen projection as cells; vertical at azimuth -90",
+    "projection": "same perspective projection as cells; positive tick included",
     "floating_left_guide": false
   },
   "floor_coastline": false,
+  "height_ratio": {
+    "numerator": 60.0,
+    "denominator": 550,
+    "relative_to_v5": 0.3333333333333333
+  },
   "numeric_depth_ratio_all_four_maps": "1 clock hour = 1 equivalent-hour display height",
   "mobile_decades": "2 columns x 3 rows; repeated subtitle once; sparse depth ticks",
+  "mobile_tick_css_pixels_at_350px": {
+    "decade_depth": 12.962962962962962,
+    "decade_colour": 13.125,
+    "single_depth_and_colour": 12.962962962962962
+  },
   "missing": "gray reference-height marker, NOT zero",
   "axis_pixels": [
     550,
@@ -137,12 +178,13 @@
         ],
         "ticks": [
           -400,
-          0
+          0,
+          150
         ],
         "box_aspect": [
           460.0,
           630.0,
-          180.0
+          75.27272727272727
         ]
       },
       "height": "-loss",
@@ -180,12 +222,13 @@
         ],
         "ticks": [
           -400,
-          0
+          0,
+          150
         ],
         "box_aspect": [
           460.0,
           630.0,
-          180.0
+          75.27272727272727
         ]
       },
       "height": "-loss",
@@ -224,12 +267,13 @@
         ],
         "ticks": [
           -400,
-          0
+          0,
+          150
         ],
         "box_aspect": [
           460.0,
           630.0,
-          180.0
+          75.27272727272727
         ]
       },
       "height": "-loss",
@@ -269,12 +313,13 @@
         ],
         "ticks": [
           -400,
-          0
+          0,
+          150
         ],
         "box_aspect": [
           460.0,
           630.0,
-          180.0
+          75.27272727272727
         ]
       },
       "height": "delta",
@@ -304,24 +349,24 @@
   },
   "files": {
     "sensitivity-3d.png": {
-      "sha256": "sha256:80e7357acfeabde4fc44eb9b35338c192fa77cac7f5b4481cb5c966af7a432fd",
-      "bytes": 108085
+      "sha256": "sha256:dfb6f64bfe1543685ea3d67ffe90b032d7cab00d54ebaeb30311750347172528",
+      "bytes": 131998
     },
     "ench-loss-3d.png": {
-      "sha256": "sha256:cd53f2c1ab6b66113eee53ff963341991608e00ca86c3fe12a2d435cc3e8d9b3",
-      "bytes": 112904
+      "sha256": "sha256:956c2034cf831caf3620d804948086b53804be82373dcdcec2a17cff3922d33a",
+      "bytes": 134038
     },
     "nch20-loss-3d.png": {
-      "sha256": "sha256:1efd4a5fa805664795f6c0cdb2ca4fc42060c13683b8ede33e3a3516e2a0ceb0",
-      "bytes": 111617
+      "sha256": "sha256:0efc09fce55be41275a3d4b130011551b05910a5755182eabaec56eee8c7856e",
+      "bytes": 134326
     },
     "time-maps-3d-desktop.png": {
-      "sha256": "sha256:007ab06ab258b65e253ef612378cfb63c27e2eda85c5af42d1cda5df43aed3c7",
-      "bytes": 329864
+      "sha256": "sha256:7b64a5ba922e4b8078e19c5c8716bafcdb36b58c9e934357e743874d04d6137a",
+      "bytes": 428971
     },
     "time-maps-3d-mobile.png": {
-      "sha256": "sha256:8c9ddad2aa5aa812e925088432ada35ae9f0f344b46d47a676fdfd45775efe27",
-      "bytes": 395031
+      "sha256": "sha256:e903effcab4cffd2b228f33d69ebc18288015ad1b16658c46363011f8660d491",
+      "bytes": 501826
     }
   }
 }
