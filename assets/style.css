@@ -11,3 +11,6 @@
 /* Decision 31: the resource and its equivalent-quantity unit lead the first screen. */
 .story-intro .resource-headline{color:var(--accent);max-width:100%}.unit-definition{font-size:.9rem;line-height:1.5;margin:6px 0 10px;max-width:1080px}
 @media(max-width:760px){.story-intro .resource-headline{font-size:1.65rem}.unit-definition{font-size:.78rem;line-height:1.5;margin:4px 0 8px}}
+
+/* Decision 32: native buttons support Tab, Enter and Space; no-JS defaults to 3D. */
+[hidden]{display:none!important}.map-toggle{display:flex;align-items:center;gap:8px;margin:8px 0 12px;flex-wrap:wrap}.map-toggle button{font:inherit;line-height:1;padding:12px 18px;min-height:44px;border:1px solid #71847c;border-radius:6px;color:var(--ink);background:transparent;cursor:pointer}.map-toggle button[aria-pressed=true]{background:var(--ink);color:white}.map-toggle button:focus-visible{outline:3px solid #b56b21;outline-offset:3px}.map-toggle span,.map-reading{font-size:.78rem;color:var(--muted)}.map-reading{margin:8px 0}.map-view img{width:100%}.map-view{min-width:0}.regional-cards figure{margin:0}

@@ -1,0 +1,327 @@
+{
+  "status": "review_watermark_retained",
+  "decision": 32,
+  "code_commit_sha": "8d4ea9bc6f1162cbcff8bdfebf56aa6a2603b1fd",
+  "generator_sha256": "sha256:cbc83bc9207d966185042624929a7034d6d08052c27abd06161a4180a27bbd03",
+  "renderer_dependencies_sha256": {
+    "cooling_3d.py": "sha256:a3631cb8b8c6303dc0ba51db127af020838f0bc04940ce23530db05737f97026",
+    "cooling_palette.py": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
+    "render_static.py": "sha256:0f0d2241a1a75c701574ea92ab8b930bbc20107fc763ad7c9c77eac650fee9d0",
+    "time_viz_proto.py": "sha256:d06b193be3988d8f85ec10585e95381fba9b370fcf4744e8141034e98c8f3f40",
+    "render_timelapse.py": "sha256:3cb7e94a20083c00d429ac11a0c5d23574ac3dd16c4497adf51fc6e9fc6a7ce8"
+  },
+  "inputs_sha256": {
+    "site/data/rok-center-v1-b1-20260907/DATA_DICTIONARY.md": "sha256:5f52d5a0688efa3648e156635cff8a9babe059e286251c19fe65b74db5fce564",
+    "site/data/rok-center-v1-b1-20260907/README.md": "sha256:43eb4b42b50767300052c00a3666c886ee06714e26898462b2ea371b01a7a87b",
+    "site/data/rok-center-v1-b1-20260907/accounting.csv": "sha256:e2af6ffd3f707572d192e479fcf63c292bb89fb4805be806be0c4e65e8581633",
+    "site/data/rok-center-v1-b1-20260907/checksums.json": "sha256:56c174fce9a9629accd1960a8ecff5019a75f08d54f4b9bf6d1bb84879065a7a",
+    "site/data/rok-center-v1-b1-20260907/country_mask.csv": "sha256:8cde11925533d65723535f922178210b52892db9124a30eb318230b7eb648414",
+    "site/data/rok-center-v1-b1-20260907/distribution.csv": "sha256:40a77638a4f93cdf4cd3b784fb448d5978621661a3ad44d83640bb613be803c4",
+    "site/data/rok-center-v1-b1-20260907/korea_grid_annual_timeseries.parquet": "sha256:ad6a1c2c8b4b39a77f3453448dc7fc102ed07790592c57928eeb24c222a91630",
+    "site/data/rok-center-v1-b1-20260907/korea_grid_map.geojson": "sha256:bb750245738bd7888db1d376485a7958b39fe18a2179f174412b74e1aa03aaa0",
+    "site/data/rok-center-v1-b1-20260907/korea_grid_standard_comparison.geoparquet": "sha256:c19d0a7c865e7a7b6ef99d4ab4fa2995d8d8b6f554aa0c7ac28a68599a9a2a18",
+    "site/data/rok-center-v1-b1-20260907/manifest.json": "sha256:53f9d447130622fbb50e535a635641894bb4b8862da14021d268c976867ec348",
+    "site/data/rok-center-v1-b1-20260907/summary.json": "sha256:17c1ebd7a57813dc87c6bfd90cbf68294c0f1539c02109f85b6c81e48ac66b9e",
+    "data/reference/boundaries/kor_adm0_geoboundaries_9469f09.geojson": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "assets/fonts/pretendard/Pretendard-Regular.otf": "sha256:3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93"
+  },
+  "input_provenance": {
+    "generated_at": "2026-09-06T17:09:22.284600+00:00",
+    "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+    "source_year_range": [
+      1961,
+      2020
+    ],
+    "baseline_period": [
+      1961,
+      1990
+    ],
+    "current_period": [
+      1991,
+      2020
+    ],
+    "code_commit_sha": "4366c4d8f3e5eb09bcda7c03698bd5250180e872",
+    "metric_version": "metric-v0.1",
+    "scenario_id": "waterside_reference_v1",
+    "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc",
+    "dataset_version": "rok-center-v1",
+    "source_provenance": {
+      "generated_at": "2026-09-04T07:59:07.323182+00:00",
+      "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+      "source_year_range": [
+        1961,
+        2020
+      ],
+      "baseline_period": [
+        1961,
+        1990
+      ],
+      "current_period": [
+        1991,
+        2020
+      ],
+      "code_commit_sha": "9927b5439f397d46955d58d5fcafe79392f68074",
+      "metric_version": "metric-v0.1",
+      "scenario_id": "waterside_reference_v1",
+      "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc"
+    },
+    "source_artifact_sha256": {
+      "korea_grid_standard_comparison.geoparquet": "sha256:a83af042dfff45883515c91a3c996cc2465d71153ef14740190ffdd26564a877",
+      "korea_grid_annual_timeseries.parquet": "sha256:fcd26f8e99740c8f85a30d8f4429ecd40047d4386d993e3b1e2c366c22ee8990",
+      "korea_grid_map.geojson": "sha256:e65599f05cd66848b5446056c56177577655d800011dfda18e3e941a8f26109d"
+    },
+    "boundary_sha256": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "boundary_id": "KOR-ADM0-49999745",
+    "boundary_version": "9469f09",
+    "selection_rule": "EPSG:4326 cell center covered by ADM0 polygon (boundary included); no buffer, no interpolation",
+    "status": "review_candidate_not_public_release",
+    "comparison_contract": {
+      "period_delta": "historical",
+      "sensitivity": "uniform_perturbation"
+    }
+  },
+  "camera": {
+    "elevation": 58,
+    "azimuth": -90,
+    "projection": "orthographic",
+    "box_aspect": [
+      460.0,
+      630.0,
+      180.0
+    ]
+  },
+  "lighting": "disabled; exact 2D colours on tops and risers",
+  "background": "#f6f5ef",
+  "geometry": "B step plate; perimeter returns to 0; no interpolation; no filled lid",
+  "reference_height": 0,
+  "coastline_height": 0,
+  "depth_axis": {
+    "position_xy_km": [
+      300,
+      -100
+    ],
+    "ticks": [
+      -400,
+      0
+    ],
+    "zero_height": 0,
+    "projection": "same world-to-screen projection as cells; vertical at azimuth -90",
+    "floating_left_guide": false
+  },
+  "floor_coastline": false,
+  "numeric_depth_ratio_all_four_maps": "1 clock hour = 1 equivalent-hour display height",
+  "mobile_decades": "2 columns x 3 rows; repeated subtitle once; sparse depth ticks",
+  "missing": "gray reference-height marker, NOT zero",
+  "axis_pixels": [
+    550,
+    550
+  ],
+  "xy_limits_km": [
+    [
+      -200,
+      340
+    ],
+    [
+      -360,
+      310
+    ]
+  ],
+  "screen_resizing": "responsive thumbnails resize the entire map, not just its depth",
+  "maps": {
+    "sensitivity": {
+      "depth_scale": {
+        "unit": "시간량/년",
+        "limits": [
+          -400,
+          150
+        ],
+        "ticks": [
+          -400,
+          0
+        ],
+        "box_aspect": [
+          460.0,
+          630.0,
+          180.0
+        ]
+      },
+      "height": "-loss",
+      "colour_bounds": [
+        251.72859893515607,
+        333.6654091521551
+      ],
+      "colour_ticks": [
+        251.72859893515607,
+        272.2128014894058,
+        292.6970040436556,
+        313.1812065979054,
+        333.6654091521551
+      ],
+      "palette": "loss_red",
+      "data_range": [
+        251.72859893515607,
+        333.6654091521551
+      ],
+      "height_range": [
+        -333.6654091521551,
+        -251.72859893515607
+      ],
+      "valid_cells": 955,
+      "missing_cells": 47,
+      "selected_cells": 1002,
+      "period": "1991-2020 +1 K; pressure/system fixed"
+    },
+    "ench-loss": {
+      "depth_scale": {
+        "unit": "시간량/년",
+        "limits": [
+          -400,
+          150
+        ],
+        "ticks": [
+          -400,
+          0
+        ],
+        "box_aspect": [
+          460.0,
+          630.0,
+          180.0
+        ]
+      },
+      "height": "-loss",
+      "colour_bounds": [
+        0.0,
+        130.0
+      ],
+      "colour_ticks": [
+        0.0,
+        26.0,
+        52.0,
+        78.0,
+        104.0,
+        130.0
+      ],
+      "palette": "loss_red",
+      "data_range": [
+        33.37482266457573,
+        126.2125492200048
+      ],
+      "height_range": [
+        -126.2125492200048,
+        -33.37482266457573
+      ],
+      "valid_cells": 955,
+      "missing_cells": 47,
+      "selected_cells": 1002,
+      "period": "1961-1990 vs 1991-2020"
+    },
+    "nch20-loss": {
+      "depth_scale": {
+        "unit": "시간/년",
+        "limits": [
+          -400,
+          150
+        ],
+        "ticks": [
+          -400,
+          0
+        ],
+        "box_aspect": [
+          460.0,
+          630.0,
+          180.0
+        ]
+      },
+      "height": "-loss",
+      "colour_bounds": [
+        -5.0,
+        95.0
+      ],
+      "colour_ticks": [
+        -5.0,
+        0,
+        20,
+        40,
+        60,
+        80,
+        95.0
+      ],
+      "palette": "asymmetric_loss",
+      "data_range": [
+        -2.0924174015390236,
+        94.15209399267087
+      ],
+      "height_range": [
+        -94.15209399267087,
+        2.0924174015390236
+      ],
+      "valid_cells": 955,
+      "missing_cells": 47,
+      "selected_cells": 1002,
+      "period": "1961-1990 vs 1991-2020"
+    },
+    "time-maps": {
+      "depth_scale": {
+        "unit": "시간량/년",
+        "limits": [
+          -400,
+          150
+        ],
+        "ticks": [
+          -400,
+          0
+        ],
+        "box_aspect": [
+          460.0,
+          630.0,
+          180.0
+        ]
+      },
+      "height": "delta",
+      "colour_bounds": [
+        -300.0,
+        300.0
+      ],
+      "colour_ticks": [
+        -300,
+        0,
+        300
+      ],
+      "palette": "loss_red_zero_white_gain_blue",
+      "data_range": [
+        -255.47015405542243,
+        70.23440286708501
+      ],
+      "height_range": [
+        -255.47015405542243,
+        70.23440286708501
+      ],
+      "valid_cells": 955,
+      "missing_cells": 47,
+      "selected_cells": 1002,
+      "period": "1961-1970 baseline; six nonoverlapping decades"
+    }
+  },
+  "files": {
+    "sensitivity-3d.png": {
+      "sha256": "sha256:80e7357acfeabde4fc44eb9b35338c192fa77cac7f5b4481cb5c966af7a432fd",
+      "bytes": 108085
+    },
+    "ench-loss-3d.png": {
+      "sha256": "sha256:cd53f2c1ab6b66113eee53ff963341991608e00ca86c3fe12a2d435cc3e8d9b3",
+      "bytes": 112904
+    },
+    "nch20-loss-3d.png": {
+      "sha256": "sha256:1efd4a5fa805664795f6c0cdb2ca4fc42060c13683b8ede33e3a3516e2a0ceb0",
+      "bytes": 111617
+    },
+    "time-maps-3d-desktop.png": {
+      "sha256": "sha256:007ab06ab258b65e253ef612378cfb63c27e2eda85c5af42d1cda5df43aed3c7",
+      "bytes": 329864
+    },
+    "time-maps-3d-mobile.png": {
+      "sha256": "sha256:8c9ddad2aa5aa812e925088432ada35ae9f0f344b46d47a676fdfd45775efe27",
+      "bytes": 395031
+    }
+  }
+}
