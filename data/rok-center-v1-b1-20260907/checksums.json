@@ -1,0 +1,8 @@
+{
+  "DATA_DICTIONARY.md": "sha256:5f52d5a0688efa3648e156635cff8a9babe059e286251c19fe65b74db5fce564",
+  "country_mask.csv": "sha256:8cde11925533d65723535f922178210b52892db9124a30eb318230b7eb648414",
+  "korea_grid_annual_timeseries.parquet": "sha256:ad6a1c2c8b4b39a77f3453448dc7fc102ed07790592c57928eeb24c222a91630",
+  "korea_grid_map.geojson": "sha256:bb750245738bd7888db1d376485a7958b39fe18a2179f174412b74e1aa03aaa0",
+  "korea_grid_standard_comparison.geoparquet": "sha256:c19d0a7c865e7a7b6ef99d4ab4fa2995d8d8b6f554aa0c7ac28a68599a9a2a18",
+  "summary.json": "sha256:17c1ebd7a57813dc87c6bfd90cbf68294c0f1539c02109f85b6c81e48ac66b9e"
+}

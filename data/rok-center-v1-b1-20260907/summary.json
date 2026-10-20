@@ -1,0 +1,173 @@
+{
+  "provenance": {
+    "generated_at": "2026-09-06T17:09:22.284600+00:00",
+    "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+    "source_year_range": [
+      1961,
+      2020
+    ],
+    "baseline_period": [
+      1961,
+      1990
+    ],
+    "current_period": [
+      1991,
+      2020
+    ],
+    "code_commit_sha": "4366c4d8f3e5eb09bcda7c03698bd5250180e872",
+    "metric_version": "metric-v0.1",
+    "scenario_id": "waterside_reference_v1",
+    "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc",
+    "dataset_version": "rok-center-v1",
+    "source_provenance": {
+      "generated_at": "2026-09-04T07:59:07.323182+00:00",
+      "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+      "source_year_range": [
+        1961,
+        2020
+      ],
+      "baseline_period": [
+        1961,
+        1990
+      ],
+      "current_period": [
+        1991,
+        2020
+      ],
+      "code_commit_sha": "9927b5439f397d46955d58d5fcafe79392f68074",
+      "metric_version": "metric-v0.1",
+      "scenario_id": "waterside_reference_v1",
+      "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc"
+    },
+    "source_artifact_sha256": {
+      "korea_grid_standard_comparison.geoparquet": "sha256:a83af042dfff45883515c91a3c996cc2465d71153ef14740190ffdd26564a877",
+      "korea_grid_annual_timeseries.parquet": "sha256:fcd26f8e99740c8f85a30d8f4429ecd40047d4386d993e3b1e2c366c22ee8990",
+      "korea_grid_map.geojson": "sha256:e65599f05cd66848b5446056c56177577655d800011dfda18e3e941a8f26109d"
+    },
+    "boundary_sha256": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "boundary_id": "KOR-ADM0-49999745",
+    "boundary_version": "9469f09",
+    "selection_rule": "EPSG:4326 cell center covered by ADM0 polygon (boundary included); no buffer, no interpolation",
+    "status": "review_candidate_not_public_release",
+    "comparison_contract": {
+      "period_delta": "historical",
+      "sensitivity": "uniform_perturbation"
+    }
+  },
+  "headline": "자연이 식혀주던 기회는 얼마나 줄었을까요? 한국의 60년 기상자료를 시간으로 바꿔 보았습니다.",
+  "aggregation": "unweighted distribution of selected valid grid centers; not national total or area-weighted mean",
+  "counts": {
+    "bbox_cells": 3190,
+    "selected_centers": 1002,
+    "selected_valid_cells": 955,
+    "selected_all_null_cells": 47,
+    "excluded_valid_cells": 332,
+    "selected_annual_rows": 60120,
+    "selected_annual_metric_nulls": 2820
+  },
+  "bbox_before": {
+    "ench_loss_h_per_year": {
+      "count": 1287,
+      "null_count": 1903,
+      "min": 33.37482266457573,
+      "median": 93.89345390683229,
+      "max": 129.78138259633124
+    },
+    "nch20_loss_h_per_year": {
+      "count": 1287,
+      "null_count": 1903,
+      "min": -2.0924174015390236,
+      "median": 46.212578155976644,
+      "max": 94.15209399267087
+    },
+    "full_mechanical_increase_h_per_year": {
+      "count": 1287,
+      "null_count": 1903,
+      "min": -17.530255558615295,
+      "median": 82.29590454850177,
+      "max": 168.4281326531136
+    },
+    "ench_sensitivity_1k_h_per_year": {
+      "count": 1287,
+      "null_count": 1903,
+      "min": 246.72615087853475,
+      "median": 277.9907539675402,
+      "max": 343.24943610230935
+    }
+  },
+  "rok_after": {
+    "ench_loss_h_per_year": {
+      "count": 955,
+      "null_count": 47,
+      "min": 33.37482266457573,
+      "median": 92.8964791120261,
+      "max": 126.2125492200048
+    },
+    "nch20_loss_h_per_year": {
+      "count": 955,
+      "null_count": 47,
+      "min": -2.0924174015390236,
+      "median": 46.50527483153792,
+      "max": 94.15209399267087
+    },
+    "full_mechanical_increase_h_per_year": {
+      "count": 955,
+      "null_count": 47,
+      "min": -17.530255558615295,
+      "median": 78.45035032170313,
+      "max": 161.2571723028732
+    },
+    "ench_sensitivity_1k_h_per_year": {
+      "count": 955,
+      "null_count": 47,
+      "min": 251.72859893515607,
+      "median": 277.5031995629909,
+      "max": 333.6654091521551
+    }
+  },
+  "representative_cells": {
+    "서울": {
+      "cell_id": "lat37.6_lon127.0",
+      "baseline_ench_h_per_year": 6171.826287500299,
+      "current_ench_h_per_year": 6057.786719350146,
+      "ench_loss_h_per_year": 114.03956815015317,
+      "nch20_loss_h_per_year": 51.72009760465835,
+      "full_mechanical_increase_h_per_year": 112.36513054170905,
+      "ench_sensitivity_1k_h_per_year": 256.40505747278706
+    },
+    "대관령": {
+      "cell_id": "lat37.7_lon128.7",
+      "baseline_ench_h_per_year": 7036.098526305786,
+      "current_ench_h_per_year": 6982.198506443674,
+      "ench_loss_h_per_year": 53.90001986211246,
+      "nch20_loss_h_per_year": 4.375474310839763,
+      "full_mechanical_increase_h_per_year": 4.540501564707938,
+      "ench_sensitivity_1k_h_per_year": 289.6025116161924
+    },
+    "제주": {
+      "cell_id": "lat33.5_lon126.5",
+      "baseline_ench_h_per_year": 5647.487770916836,
+      "current_ench_h_per_year": 5535.801894660766,
+      "ench_loss_h_per_year": 111.6858762560696,
+      "nch20_loss_h_per_year": 62.338162216432465,
+      "full_mechanical_increase_h_per_year": 118.30471426093936,
+      "ench_sensitivity_1k_h_per_year": 324.30464553988946
+    }
+  },
+  "scope_limits": [
+    "Generalized cartographic ADM0, not cadastral or legal territory determination.",
+    "Source bbox: 33.0..38.7 N, 125.6..131.0 E; Dokdo/western islands outside bbox.",
+    "Center rule omits islands/coastal overlaps without an inside center; no buffer.",
+    "Annual missing values remain missing; period means exclude missing years.",
+    "Sensitivity: fixed dry-bulb/dewpoint perturbation, not forecast or acceleration."
+  ],
+  "label_contract": {
+    "seoul_point_annual_ench_loss_h_per_year": 114.1,
+    "seoul_point_may_october_ench_loss_h_per_year": 113.0,
+    "source": [
+      "docs/results/three_site_long_term_1961_2020.md",
+      "docs/results/signal_check_1961_2020.md"
+    ],
+    "note": "Rounded point-series labels; do not replace the grid values with these literals."
+  }
+}

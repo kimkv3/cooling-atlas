@@ -1,0 +1,62 @@
+Third-party attribution and notices / 제3자 귀속·조건
+Project licenses effective 2026-10-20; public release remains pending.
+
+1. Climate source
+ERA5-Land hourly data from 1950 to present, Copernicus Climate Change Service
+(C3S) Climate Data Store (CDS), DOI: 10.24381/cds.e2161bac.
+https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land
+
+Contains modified Copernicus Climate Change Service information (2026).
+Neither the European Commission nor ECMWF is responsible for any use that may
+be made of the Copernicus information or data it contains.
+
+This package contains derived aggregate metrics, not the original hourly fields.
+The Copernicus/ECMWF terms applicable to the original acquisition must be retained;
+the CC BY 4.0 license effective 2026-10-20 applies only to project-authored derivative rights.
+Reference: https://object-store.os-api.cci2.ecmwf.int/cci2-prod-catalogue/licences/cc-by/cc-byv1_2b61eb0b42e053566cb9447c1d2847a69a275c095e00fca00bad1bf5326a9432.md
+P1-053 verified the current dataset page and licence text on 2026-09-21:
+CC BY 4.0, https://creativecommons.org/licenses/by/4.0/legalcode.en
+Changes: hourly temperature/dewpoint/pressure fields were locally transformed into
+aggregate cooling-opportunity metrics and raster maps/videos; not original fields.
+Current CDS Copernicus licence v1.2 (November 2019), clauses 1.5, 4, 5 and 6,
+and CDS Terms of Use Articles 2/4/5/6 were also checked:
+https://cds.climate.copernicus.eu/licences/licence-to-use-copernicus-products
+https://cds.climate.copernicus.eu/disclaimer-privacy
+The dataset-specific licence must be distinguished from the general Copernicus
+text. Existing Copernicus attribution/disclaimer is retained conservatively.
+Actual acquisition-account acceptance time and accepted revision remain unverified.
+See docs/licensing/copernicus-evidence.md in the source repository for quotations,
+comparison and gaps. Current web evidence is not proof of historical acceptance.
+The project license applies only to project-authored rights, not existing upstream permissions.
+
+2. Boundary
+Natural Earth via geoBoundaries gbOpen, KOR-ADM0-49999745, represented year 2021,
+source revision 9469f09. Source license: Public Domain; recorded verification
+2026-09-07 in data/reference/boundaries/LICENSE-SOURCE.md and source-api.json.
+https://www.naturalearthdata.com/about/terms-of-use/
+https://github.com/wmgeolab/geoBoundaries/tree/9469f09
+This refers to the selected Natural Earth source, not a blanket public-domain
+claim for every geoBoundaries dataset. Generalized map geometry, not legal or
+cadastral boundaries. The climate bbox excludes Dokdo and some western islands.
+
+3. Fonts, media, and runtime
+Historical review media in docs/results/ used locally installed AppleGothic;
+AppleGothic font files are not redistributed. Its original usage licence remains
+unverified; those historical raster files have not been re-rendered.
+AppleGothic review images are confined to docs/results/ and are excluded from
+the planned public mirror.
+The site/ maps and videos use Pretendard v1.3.9 Regular (SIL OFL 1.1), not AppleGothic.
+The unmodified static OTF is vendored in assets/fonts/pretendard/ with the upstream
+copyright, OFL.txt and SOURCE.md. Copyright (c) 2021, Kil Hyung-jin; Reserved Font
+Name Pretendard. https://github.com/orioncactus/pretendard/releases/tag/v1.3.9
+site/ contains raster output only, not font binaries. OFL does not require raster
+documents to use OFL. Explicit --font overrides need their own rights review.
+Matplotlib and ffmpeg/imageio-ffmpeg were build-time tools. Their libraries,
+executables, and codec implementations are not redistributed in site/.
+Their own licenses apply when installing the reproduction environment.
+
+4. Scientific contract
+No engineering guarantee. Fixed-system potential cooling opportunities are not
+actual electricity consumption, observed health outcomes, or future forecasts.
+Nulls are not zeros. ENCH and NCH20 are not additive. Review watermarks are retained
+until an independently authorized release render. See site/methodology.html.

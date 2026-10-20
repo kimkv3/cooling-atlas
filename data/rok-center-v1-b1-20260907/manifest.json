@@ -1,0 +1,106 @@
+{
+  "release_id": "rok-center-v1-b1-20260907",
+  "status": "review_package_final_GO_pending",
+  "input_provenance": {
+    "generated_at": "2026-09-06T17:09:22.284600+00:00",
+    "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+    "source_year_range": [
+      1961,
+      2020
+    ],
+    "baseline_period": [
+      1961,
+      1990
+    ],
+    "current_period": [
+      1991,
+      2020
+    ],
+    "code_commit_sha": "4366c4d8f3e5eb09bcda7c03698bd5250180e872",
+    "metric_version": "metric-v0.1",
+    "scenario_id": "waterside_reference_v1",
+    "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc",
+    "dataset_version": "rok-center-v1",
+    "source_provenance": {
+      "generated_at": "2026-09-04T07:59:07.323182+00:00",
+      "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+      "source_year_range": [
+        1961,
+        2020
+      ],
+      "baseline_period": [
+        1961,
+        1990
+      ],
+      "current_period": [
+        1991,
+        2020
+      ],
+      "code_commit_sha": "9927b5439f397d46955d58d5fcafe79392f68074",
+      "metric_version": "metric-v0.1",
+      "scenario_id": "waterside_reference_v1",
+      "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc"
+    },
+    "source_artifact_sha256": {
+      "korea_grid_standard_comparison.geoparquet": "sha256:a83af042dfff45883515c91a3c996cc2465d71153ef14740190ffdd26564a877",
+      "korea_grid_annual_timeseries.parquet": "sha256:fcd26f8e99740c8f85a30d8f4429ecd40047d4386d993e3b1e2c366c22ee8990",
+      "korea_grid_map.geojson": "sha256:e65599f05cd66848b5446056c56177577655d800011dfda18e3e941a8f26109d"
+    },
+    "boundary_sha256": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "boundary_id": "KOR-ADM0-49999745",
+    "boundary_version": "9469f09",
+    "selection_rule": "EPSG:4326 cell center covered by ADM0 polygon (boundary included); no buffer, no interpolation",
+    "status": "review_candidate_not_public_release",
+    "comparison_contract": {
+      "period_delta": "historical",
+      "sensitivity": "uniform_perturbation"
+    }
+  },
+  "assembly": {
+    "generator": "climate_ingest.package_site",
+    "generator_sha256": "sha256:2d39e7e95a7b94d689ef9710484f775d74287163e227d922c531774a6797549f",
+    "metric_recalculation": false
+  },
+  "files": {
+    "DATA_DICTIONARY.md": {
+      "sha256": "sha256:5f52d5a0688efa3648e156635cff8a9babe059e286251c19fe65b74db5fce564",
+      "bytes": 8052
+    },
+    "README.md": {
+      "sha256": "sha256:43eb4b42b50767300052c00a3666c886ee06714e26898462b2ea371b01a7a87b",
+      "bytes": 1551
+    },
+    "accounting.csv": {
+      "sha256": "sha256:e2af6ffd3f707572d192e479fcf63c292bb89fb4805be806be0c4e65e8581633",
+      "bytes": 933
+    },
+    "checksums.json": {
+      "sha256": "sha256:56c174fce9a9629accd1960a8ecff5019a75f08d54f4b9bf6d1bb84879065a7a",
+      "bytes": 634
+    },
+    "country_mask.csv": {
+      "sha256": "sha256:8cde11925533d65723535f922178210b52892db9124a30eb318230b7eb648414",
+      "bytes": 202755
+    },
+    "distribution.csv": {
+      "sha256": "sha256:40a77638a4f93cdf4cd3b784fb448d5978621661a3ad44d83640bb613be803c4",
+      "bytes": 504
+    },
+    "korea_grid_annual_timeseries.parquet": {
+      "sha256": "sha256:ad6a1c2c8b4b39a77f3453448dc7fc102ed07790592c57928eeb24c222a91630",
+      "bytes": 3929886
+    },
+    "korea_grid_map.geojson": {
+      "sha256": "sha256:bb750245738bd7888db1d376485a7958b39fe18a2179f174412b74e1aa03aaa0",
+      "bytes": 649435
+    },
+    "korea_grid_standard_comparison.geoparquet": {
+      "sha256": "sha256:c19d0a7c865e7a7b6ef99d4ab4fa2995d8d8b6f554aa0c7ac28a68599a9a2a18",
+      "bytes": 303360
+    },
+    "summary.json": {
+      "sha256": "sha256:17c1ebd7a57813dc87c6bfd90cbf68294c0f1539c02109f85b6c81e48ac66b9e",
+      "bytes": 6155
+    }
+  }
+}

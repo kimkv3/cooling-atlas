@@ -1,0 +1,34 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+Effective 2026-10-20 — approved by Yongwoo Kim.
+
+Project-authored aggregate datasets and their rendered maps/videos are licensed
+under CC BY 4.0. This grant covers project-authored rights only; it does not
+relicense ERA5-Land source data or third-party boundaries/fonts.
+License effectiveness does not constitute approval to publish the site.
+
+Legal terms (original text checked 2026-09-21):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution:
+Yongwoo Kim, Cooling Resource Atlas (냉기 자원 지도),
+rok-center-v1 / b1-20260907, metric-v0.1, waterside_reference_v1.
+Include the release identifier, source link, license link, and an indication
+of any changes. Public source: https://kimkv3.github.io/cooling-atlas
+(게시 예정 / publication pending). Until publication, use the immutable Git
+commit in docs/reproduce.md for source identification.
+
+The existing release README records its assembly-time license status and is
+retained unchanged with its manifest checksums. This notice supplies the
+project license effective 2026-10-20 for the identified release.
+
+ERA5-Land and Copernicus conditions/attribution remain independently applicable.
+CC BY 4.0 does not certify the scientific validity of a derivative or imply
+endorsement. See NOTICE for source attribution and limits.
+
+The current ERA5-Land dataset identifies its source licence as CC BY 4.0:
+https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+Retain source attribution, licence/disclaimer notices and changes information.
+This project license does not restrict permissions already granted upstream.
+Historical acquisition-account acceptance/version remains unverified; see NOTICE
+and docs/licensing/copernicus-evidence.md in the source repository.

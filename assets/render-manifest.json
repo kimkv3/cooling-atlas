@@ -1,0 +1,140 @@
+{
+  "status": "review_only_not_public",
+  "render_code_commit_sha": "6c9f041907ae77b5b216a8811fc5f351209b3e70",
+  "input_provenance": {
+    "generated_at": "2026-09-06T17:09:22.284600+00:00",
+    "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+    "source_year_range": [
+      1961,
+      2020
+    ],
+    "baseline_period": [
+      1961,
+      1990
+    ],
+    "current_period": [
+      1991,
+      2020
+    ],
+    "code_commit_sha": "4366c4d8f3e5eb09bcda7c03698bd5250180e872",
+    "metric_version": "metric-v0.1",
+    "scenario_id": "waterside_reference_v1",
+    "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc",
+    "dataset_version": "rok-center-v1",
+    "source_provenance": {
+      "generated_at": "2026-09-04T07:59:07.323182+00:00",
+      "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+      "source_year_range": [
+        1961,
+        2020
+      ],
+      "baseline_period": [
+        1961,
+        1990
+      ],
+      "current_period": [
+        1991,
+        2020
+      ],
+      "code_commit_sha": "9927b5439f397d46955d58d5fcafe79392f68074",
+      "metric_version": "metric-v0.1",
+      "scenario_id": "waterside_reference_v1",
+      "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc"
+    },
+    "source_artifact_sha256": {
+      "korea_grid_standard_comparison.geoparquet": "sha256:a83af042dfff45883515c91a3c996cc2465d71153ef14740190ffdd26564a877",
+      "korea_grid_annual_timeseries.parquet": "sha256:fcd26f8e99740c8f85a30d8f4429ecd40047d4386d993e3b1e2c366c22ee8990",
+      "korea_grid_map.geojson": "sha256:e65599f05cd66848b5446056c56177577655d800011dfda18e3e941a8f26109d"
+    },
+    "boundary_sha256": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "boundary_id": "KOR-ADM0-49999745",
+    "boundary_version": "9469f09",
+    "selection_rule": "EPSG:4326 cell center covered by ADM0 polygon (boundary included); no buffer, no interpolation",
+    "status": "review_candidate_not_public_release",
+    "comparison_contract": {
+      "period_delta": "historical",
+      "sensitivity": "uniform_perturbation"
+    }
+  },
+  "summary_sha256": "sha256:17c1ebd7a57813dc87c6bfd90cbf68294c0f1539c02109f85b6c81e48ac66b9e",
+  "country_mask_sha256": "sha256:8cde11925533d65723535f922178210b52892db9124a30eb318230b7eb648414",
+  "font_name": "Pretendard",
+  "font_sha256": "sha256:3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93",
+  "font_policy": "Pretendard v1.3.9 Regular; SIL OFL 1.1; assets/fonts/pretendard/OFL.txt",
+  "projection": "EPSG:5179",
+  "extent_xy": [
+    719700.0104938236,
+    1336387.6853177643,
+    1449470.8344858745,
+    2094926.8855769588
+  ],
+  "interpolation": "none",
+  "maps": {
+    "sensitivity": {
+      "column": "ench_sensitivity_1k_h_per_year",
+      "sign": 1.0,
+      "vmin": 251.72859893515607,
+      "vmax": 333.6654091521551,
+      "cmap": "YlOrRd",
+      "scale_method": "범례: 국내 유효셀 최소-최대 선형 스케일 (0에서 시작하지 않음)",
+      "ticks": [
+        251.72859893515607,
+        272.2128014894058,
+        292.6970040436556,
+        313.1812065979054,
+        333.6654091521551
+      ],
+      "data_min": 251.72859893515607,
+      "data_max": 333.6654091521551,
+      "zero_position": null,
+      "valid_cells": 955,
+      "null_cells": 47,
+      "sha256": "sha256:cf3d8078b6b50b05428de08a28aa7ad00886f7fdf497d27832b2a0ebb4abffb7"
+    },
+    "ench-loss": {
+      "column": "delta_ench_h_per_year",
+      "sign": -1.0,
+      "vmin": 0.0,
+      "vmax": 130.0,
+      "cmap": "zero_to_loss",
+      "scale_method": "범례: 0=변화 없음, 손실 방향 선형 스케일",
+      "ticks": [
+        0.0,
+        26.0,
+        52.0,
+        78.0,
+        104.0,
+        130.0
+      ],
+      "data_min": 33.37482266457573,
+      "data_max": 126.2125492200048,
+      "zero_position": 0.0,
+      "valid_cells": 955,
+      "null_cells": 47,
+      "sha256": "sha256:94aab1916ba39286c0f34a703d77b79e2173eafc82e177023c93742728568464"
+    },
+    "nch20-loss": {
+      "column": "delta_nch20_h_per_year",
+      "sign": -1.0,
+      "vmin": -5.0,
+      "vmax": 95.0,
+      "cmap": "asymmetric_loss",
+      "scale_method": "범례: 실측 범위를 5시간 단위로 확장한 비대칭 선형 스케일 · 검은 선=0",
+      "ticks": [
+        -5.0,
+        0,
+        20,
+        40,
+        60,
+        80,
+        95.0
+      ],
+      "data_min": -2.0924174015390236,
+      "data_max": 94.15209399267087,
+      "zero_position": 0.05,
+      "valid_cells": 955,
+      "null_cells": 47,
+      "sha256": "sha256:2cfc213a8de3f345b8b6e2e27fa2bc36a8e72cf320d236acd98f5bfdd3e4d16b"
+    }
+  }
+}

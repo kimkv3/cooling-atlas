@@ -1,0 +1,5 @@
+metric,comparison_kind,unit,count,null_count,min,median,max
+ench_loss_h_per_year,historical,h/year,955,47,33.37482266457573,92.8964791120261,126.2125492200048
+nch20_loss_h_per_year,historical,h/year,955,47,-2.0924174015390236,46.50527483153792,94.15209399267087
+full_mechanical_increase_h_per_year,historical,h/year,955,47,-17.530255558615295,78.45035032170313,161.2571723028732
+ench_sensitivity_1k_h_per_year,conditional_perturbation,h/year,955,47,251.72859893515607,277.5031995629909,333.6654091521551

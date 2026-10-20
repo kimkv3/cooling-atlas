@@ -1,0 +1,728 @@
+{
+  "status": "review_only_not_public",
+  "code_commit_sha": "6c9f041907ae77b5b216a8811fc5f351209b3e70",
+  "input_provenance": {
+    "generated_at": "2026-09-06T17:09:22.284600+00:00",
+    "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+    "source_year_range": [
+      1961,
+      2020
+    ],
+    "baseline_period": [
+      1961,
+      1990
+    ],
+    "current_period": [
+      1991,
+      2020
+    ],
+    "code_commit_sha": "4366c4d8f3e5eb09bcda7c03698bd5250180e872",
+    "metric_version": "metric-v0.1",
+    "scenario_id": "waterside_reference_v1",
+    "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc",
+    "dataset_version": "rok-center-v1",
+    "source_provenance": {
+      "generated_at": "2026-09-04T07:59:07.323182+00:00",
+      "source": "ERA5-Land hourly Korea bbox; P1-041 annual grid panel",
+      "source_year_range": [
+        1961,
+        2020
+      ],
+      "baseline_period": [
+        1961,
+        1990
+      ],
+      "current_period": [
+        1991,
+        2020
+      ],
+      "code_commit_sha": "9927b5439f397d46955d58d5fcafe79392f68074",
+      "metric_version": "metric-v0.1",
+      "scenario_id": "waterside_reference_v1",
+      "scenario_config_hash": "sha256:7a55a7c87abae162f8e9e0a263324e9153731205fd7f46efffe32be4c19813bc"
+    },
+    "source_artifact_sha256": {
+      "korea_grid_standard_comparison.geoparquet": "sha256:a83af042dfff45883515c91a3c996cc2465d71153ef14740190ffdd26564a877",
+      "korea_grid_annual_timeseries.parquet": "sha256:fcd26f8e99740c8f85a30d8f4429ecd40047d4386d993e3b1e2c366c22ee8990",
+      "korea_grid_map.geojson": "sha256:e65599f05cd66848b5446056c56177577655d800011dfda18e3e941a8f26109d"
+    },
+    "boundary_sha256": "sha256:888b11db665e0c013aa3087cafc58aafd0e48b8069a07d8a74e06e80f67ac88f",
+    "boundary_id": "KOR-ADM0-49999745",
+    "boundary_version": "9469f09",
+    "selection_rule": "EPSG:4326 cell center covered by ADM0 polygon (boundary included); no buffer, no interpolation",
+    "status": "review_candidate_not_public_release",
+    "comparison_contract": {
+      "period_delta": "historical",
+      "sensitivity": "uniform_perturbation"
+    }
+  },
+  "annual_panel_sha256": "sha256:ad6a1c2c8b4b39a77f3453448dc7fc102ed07790592c57928eeb24c222a91630",
+  "country_mask_sha256": "sha256:8cde11925533d65723535f922178210b52892db9124a30eb318230b7eb648414",
+  "font_name": "Pretendard",
+  "font_policy": "Pretendard v1.3.9 Regular; SIL OFL 1.1; assets/fonts/pretendard/OFL.txt",
+  "font_sha256": "sha256:3ffbacde6ab8411f1d2db54bb9b1f0b3ee2a738932033722cf0388c06aed1c93",
+  "metric": "ench_h_per_year",
+  "aggregation": "trailing 10 calendar years; min_periods=10",
+  "frame_year_label": "last year of window",
+  "first_window": [
+    1961,
+    1970
+  ],
+  "last_window": [
+    2011,
+    2020
+  ],
+  "frame_count": 51,
+  "fps": 8,
+  "duration_seconds": 6.375,
+  "resolution": [
+    1440,
+    1800
+  ],
+  "scale": {
+    "vmin": 5100.0,
+    "vmax": 7300.0,
+    "cmap": "YlGnBu",
+    "normalization": "linear",
+    "scope": "all cells across all 51 frames; fixed throughout"
+  },
+  "projection": "EPSG:5179",
+  "extent_xy": [
+    719700.0104938236,
+    1336387.6853177643,
+    1449470.8344858745,
+    2094926.8855769588
+  ],
+  "spatial_interpolation": "none",
+  "temporal_interpolation": "none; one frame per end year",
+  "frames": [
+    {
+      "file": "frames/000.png",
+      "window": [
+        1961,
+        1970
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5307.912790799802,
+      "max": 7164.404291218161,
+      "sha256": "sha256:d5a6eabc0e17bf9a93de3f54526159810b361cc29eb95dc3fbedb85c21c74d47"
+    },
+    {
+      "file": "frames/001.png",
+      "window": [
+        1962,
+        1971
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5345.481096742906,
+      "max": 7193.672034022185,
+      "sha256": "sha256:90654a17e980515fec879f07dc6b3aa65c87aaea0705a8ba2d05293934170c44"
+    },
+    {
+      "file": "frames/002.png",
+      "window": [
+        1963,
+        1972
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5318.66016390871,
+      "max": 7221.480507054779,
+      "sha256": "sha256:d7d886f0e7ac69df00096ed580152c97a8ab564e9a8b91c4a3ce2ea95dda341a"
+    },
+    {
+      "file": "frames/003.png",
+      "window": [
+        1964,
+        1973
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5318.908111268492,
+      "max": 7218.629340519525,
+      "sha256": "sha256:4628716cc6bc48b48449b3de4b9d3acbc2e965b8833143e6dbb51f70e78ac4a9"
+    },
+    {
+      "file": "frames/004.png",
+      "window": [
+        1965,
+        1974
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5368.276636406154,
+      "max": 7258.723710096395,
+      "sha256": "sha256:986bd5fda3624fca4060f6a758d664712144904ab9974bd8bf23cb98da62e9e9"
+    },
+    {
+      "file": "frames/005.png",
+      "window": [
+        1966,
+        1975
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5349.751734875723,
+      "max": 7221.435416388944,
+      "sha256": "sha256:6852aae817d0d1c10b27c5f04778a390c2692ed94bbd1e6b39c84e9af1f6a25b"
+    },
+    {
+      "file": "frames/006.png",
+      "window": [
+        1967,
+        1976
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5359.326526583575,
+      "max": 7255.553947984631,
+      "sha256": "sha256:8862baf288a2f8ae027f6740d1e78596f5dd19ec7699398320c710bc71f232a7"
+    },
+    {
+      "file": "frames/007.png",
+      "window": [
+        1968,
+        1977
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5356.028622163136,
+      "max": 7257.000708575189,
+      "sha256": "sha256:f2476aac8bd953672dd391a9696e1f5d74008e87f1099f156e130cc9f929a75f"
+    },
+    {
+      "file": "frames/008.png",
+      "window": [
+        1969,
+        1978
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5354.844533934408,
+      "max": 7209.642215211456,
+      "sha256": "sha256:b314624443950fdd700564e07d9f2d5ba99e0e956bbc7e5fc337553ed58baafc"
+    },
+    {
+      "file": "frames/009.png",
+      "window": [
+        1970,
+        1979
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5341.8501356304205,
+      "max": 7191.896703160109,
+      "sha256": "sha256:7e721103f001028369e3ebae2937e8e75fbcd5b050d795f87e9674685f708e57"
+    },
+    {
+      "file": "frames/010.png",
+      "window": [
+        1971,
+        1980
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5347.73055795747,
+      "max": 7234.053815646397,
+      "sha256": "sha256:e4995ef7650a9a680b49c70e2e9cab7f40c98420cbdb578aa2204fcd40cb7704"
+    },
+    {
+      "file": "frames/011.png",
+      "window": [
+        1972,
+        1981
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5360.523615332496,
+      "max": 7248.39794522504,
+      "sha256": "sha256:fbb09933e458912dbc3c4a925041aa0257fc5603cf4d96f09b73e83b489da2eb"
+    },
+    {
+      "file": "frames/012.png",
+      "window": [
+        1973,
+        1982
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5343.868222977788,
+      "max": 7240.963893552022,
+      "sha256": "sha256:9074d7db9d80e057621fad000ebe6c45bbcff888a5dc6652cb5124edf6b13982"
+    },
+    {
+      "file": "frames/013.png",
+      "window": [
+        1974,
+        1983
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5318.221003334654,
+      "max": 7252.150582323744,
+      "sha256": "sha256:0a25ff4293d39c537756d3c91888236631141ce7574a273d83f87077c3849c3e"
+    },
+    {
+      "file": "frames/014.png",
+      "window": [
+        1975,
+        1984
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5293.842843160288,
+      "max": 7215.5470341273785,
+      "sha256": "sha256:a2d34758e9579458391feea999e611fced3009b87f6575f026ca3519ca5e112d"
+    },
+    {
+      "file": "frames/015.png",
+      "window": [
+        1976,
+        1985
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5295.280562098758,
+      "max": 7207.919467065903,
+      "sha256": "sha256:e176ee5768bc6ec1b456c2e0be79c72314f2d5635c32cb43490575588cea3092"
+    },
+    {
+      "file": "frames/016.png",
+      "window": [
+        1977,
+        1986
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5314.588065326067,
+      "max": 7187.030052290365,
+      "sha256": "sha256:c1f0616ff9f19ae5863a97cb4c5fd3bd7ca2805c0a870733cab8a1fd054d5be8"
+    },
+    {
+      "file": "frames/017.png",
+      "window": [
+        1978,
+        1987
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5310.209056252357,
+      "max": 7192.039810737895,
+      "sha256": "sha256:e4f32d1a7bcff7f4765fdf4ecde2d02dda74c153c4ebdb200b20dc0e6585599b"
+    },
+    {
+      "file": "frames/018.png",
+      "window": [
+        1979,
+        1988
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5307.025715097814,
+      "max": 7227.345577504231,
+      "sha256": "sha256:0882f78634e901a5835085503ef413d518c3d62852778d227bd46323424b4149"
+    },
+    {
+      "file": "frames/019.png",
+      "window": [
+        1980,
+        1989
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5316.446405455479,
+      "max": 7245.457124246101,
+      "sha256": "sha256:0186dbbbaea5b2fe778c1c2e74e956eea863f45308f8fb95e44e7cac04aec2fc"
+    },
+    {
+      "file": "frames/020.png",
+      "window": [
+        1981,
+        1990
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5290.776228890916,
+      "max": 7179.288753994939,
+      "sha256": "sha256:aca1e0fe58539a01e89c3e36106ee7eb16bb8355e9c7416dee034e1c08e1d688"
+    },
+    {
+      "file": "frames/021.png",
+      "window": [
+        1982,
+        1991
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5274.089651348775,
+      "max": 7169.823259975683,
+      "sha256": "sha256:8dfdb1cf4193b5eba08d54c50e592766ce44def6278a24e289c64c90ee7bdf9e"
+    },
+    {
+      "file": "frames/022.png",
+      "window": [
+        1983,
+        1992
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5328.788372767639,
+      "max": 7165.020187733676,
+      "sha256": "sha256:4c84198e25a177dbc79f31853472806e7c423e83dc236e9f0c9aa515b4292d53"
+    },
+    {
+      "file": "frames/023.png",
+      "window": [
+        1984,
+        1993
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5360.228546370696,
+      "max": 7209.959596645934,
+      "sha256": "sha256:5b7198aa3cd32b403a0e8c14ef93a2c05656a7557725ed8b6be0ea219ecb5168"
+    },
+    {
+      "file": "frames/024.png",
+      "window": [
+        1985,
+        1994
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5361.810246155501,
+      "max": 7204.312888511575,
+      "sha256": "sha256:ced6cf56f7c75577d3cd0e31d4a2bc77c4a7f57923490575c45841ce163b4ab3"
+    },
+    {
+      "file": "frames/025.png",
+      "window": [
+        1986,
+        1995
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5401.915295597025,
+      "max": 7238.0416401716775,
+      "sha256": "sha256:849bda9d515fb122cd806ac411e679444b7c8e93d3e6ddfcbadeec74f637f147"
+    },
+    {
+      "file": "frames/026.png",
+      "window": [
+        1987,
+        1996
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5364.617398767954,
+      "max": 7233.478806206013,
+      "sha256": "sha256:bd2d7ce760e256cc25939b9e4edb506ed3ab94b98fe26a9e81bad4ee6ca165b6"
+    },
+    {
+      "file": "frames/027.png",
+      "window": [
+        1988,
+        1997
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5370.150934649972,
+      "max": 7228.139958852077,
+      "sha256": "sha256:c39f23dfa1af92d8541807e1fb33ee2af8470e7578ff325caac3f2e716492972"
+    },
+    {
+      "file": "frames/028.png",
+      "window": [
+        1989,
+        1998
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5315.524281241281,
+      "max": 7199.722684885131,
+      "sha256": "sha256:c1a17995483fbcff26c1b2ca95f4bf060acbd3961ed3d814303ebacdebd4ff17"
+    },
+    {
+      "file": "frames/029.png",
+      "window": [
+        1990,
+        1999
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5294.938786737242,
+      "max": 7164.777750128652,
+      "sha256": "sha256:7c1c45e4cc2e0613313d617419889c078082e405da61a0bf22e0ebb78c908357"
+    },
+    {
+      "file": "frames/030.png",
+      "window": [
+        1991,
+        2000
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5314.28142617222,
+      "max": 7177.147685682796,
+      "sha256": "sha256:fa369ec05bb8035ca2624cec34ba1ef8fdd32578181b494a5b84192d3793a607"
+    },
+    {
+      "file": "frames/031.png",
+      "window": [
+        1992,
+        2001
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5280.910402133575,
+      "max": 7176.258278919738,
+      "sha256": "sha256:1f855c31b867712e7a0d480528fc873eea8c7f08511cbb65e6f935dbda1edd6b"
+    },
+    {
+      "file": "frames/032.png",
+      "window": [
+        1993,
+        2002
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5242.746717600955,
+      "max": 7178.343310900173,
+      "sha256": "sha256:b5c9efc6250ced1080562099ec40be279d78532b94e145340b2bb09783f1277f"
+    },
+    {
+      "file": "frames/033.png",
+      "window": [
+        1994,
+        2003
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5219.567537722725,
+      "max": 7150.695376047448,
+      "sha256": "sha256:7d21c5d6e623142342bb89f59fe5e6c45a6b628caf7d7092dd9ee63edfb7ad9b"
+    },
+    {
+      "file": "frames/034.png",
+      "window": [
+        1995,
+        2004
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5214.604670142146,
+      "max": 7166.636265610449,
+      "sha256": "sha256:dbcffa9dd37dd526e7aae2de8fa1707ee3a987c1034ca2de6ae15a6c39225443"
+    },
+    {
+      "file": "frames/035.png",
+      "window": [
+        1996,
+        2005
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5162.0053776305285,
+      "max": 7137.57474796154,
+      "sha256": "sha256:1a0254d8f2f51e102887f13058bad0269f1e5f24709af7c0fe6d6dcd3dd3b8f4"
+    },
+    {
+      "file": "frames/036.png",
+      "window": [
+        1997,
+        2006
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5159.964762497243,
+      "max": 7131.6593034194375,
+      "sha256": "sha256:cc3dc276364a8adab35d90b66dff2089ec2f08a8791d6add241dc5a0d6eb63b6"
+    },
+    {
+      "file": "frames/037.png",
+      "window": [
+        1998,
+        2007
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5151.891006263291,
+      "max": 7123.767507544163,
+      "sha256": "sha256:0f5b4d045389827763f044ae1d05bb1e4a98c2c336e11e1eca316fd1a14916d8"
+    },
+    {
+      "file": "frames/038.png",
+      "window": [
+        1999,
+        2008
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5193.064798810028,
+      "max": 7148.048973616557,
+      "sha256": "sha256:16025b9587dc4c4334ffd10e8c848794ce4a9997077098dc229fd822068d0e8f"
+    },
+    {
+      "file": "frames/039.png",
+      "window": [
+        2000,
+        2009
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5190.17665549682,
+      "max": 7192.150813265292,
+      "sha256": "sha256:5141cd6d276641afdc6805dd708d0ec4ffddf244baa61afca329d7d36756fd9e"
+    },
+    {
+      "file": "frames/040.png",
+      "window": [
+        2001,
+        2010
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5183.932010573154,
+      "max": 7173.127381043691,
+      "sha256": "sha256:6d568e29eb1dd4b2008c10d51338012c0cd3148d9bc5200a69ff1e6724499850"
+    },
+    {
+      "file": "frames/041.png",
+      "window": [
+        2002,
+        2011
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5184.840263569109,
+      "max": 7162.185335187882,
+      "sha256": "sha256:0107ddb0aecca9d4a33199878f39cc7c388febf728fd801da0b383c6d5c5558f"
+    },
+    {
+      "file": "frames/042.png",
+      "window": [
+        2003,
+        2012
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5188.193773645583,
+      "max": 7143.127800868695,
+      "sha256": "sha256:53521279632db9f879e74ee3c1acb8bfbed4bd60416219c8cbc6657ca44c953f"
+    },
+    {
+      "file": "frames/043.png",
+      "window": [
+        2004,
+        2013
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5182.030717006992,
+      "max": 7086.708513521592,
+      "sha256": "sha256:be1be9e498f91ed2111d16df95fd1c139e78610290308a3ee42601561fbb5a4c"
+    },
+    {
+      "file": "frames/044.png",
+      "window": [
+        2005,
+        2014
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5167.359244254193,
+      "max": 7108.178847362838,
+      "sha256": "sha256:844353d4fc3ceb6daf73f36380bfa63f18f15fb3f3b5a4676b5315ab8491ade4"
+    },
+    {
+      "file": "frames/045.png",
+      "window": [
+        2006,
+        2015
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5165.122322200517,
+      "max": 7154.835916677215,
+      "sha256": "sha256:3eb763f2f311ee13deac9fd9869671e6ae0dcdeb1907345f0e4b6b4cf86afd3d"
+    },
+    {
+      "file": "frames/046.png",
+      "window": [
+        2007,
+        2016
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5131.9109097320925,
+      "max": 7135.374972000069,
+      "sha256": "sha256:12d75fb7b00f59743c6201dc9ba669eb16f719ee44c79a97e2e65480d9e67539"
+    },
+    {
+      "file": "frames/047.png",
+      "window": [
+        2008,
+        2017
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5131.012462178789,
+      "max": 7142.71343383753,
+      "sha256": "sha256:7b843547d649d2bee472623ecfd0fef21c57af07cf5c17f6f254845512fdd197"
+    },
+    {
+      "file": "frames/048.png",
+      "window": [
+        2009,
+        2018
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5122.522879439768,
+      "max": 7122.752411073857,
+      "sha256": "sha256:9f4d87dbbc037587978c26e59590e91c05331e30e30ee86a5cfed94c70779893"
+    },
+    {
+      "file": "frames/049.png",
+      "window": [
+        2010,
+        2019
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5115.017431230324,
+      "max": 7087.062773069767,
+      "sha256": "sha256:bcb3116e6b5569e2927288c83b48a58ee7ea6af8e2d6a1c327d200190d38435d"
+    },
+    {
+      "file": "frames/050.png",
+      "window": [
+        2011,
+        2020
+      ],
+      "valid_cells": 955,
+      "null_cells": 47,
+      "min": 5106.413154376367,
+      "max": 7111.000351799627,
+      "sha256": "sha256:7ccec255b14b2fc588a4410a57a0d56d8cace8604427932ba7f14c2772066f8d"
+    }
+  ],
+  "rolling_panel_sha256": "sha256:887b01c1e449fd36c63f2716e5a0b45cd4119e8312d535182b2564861a4e2918",
+  "encodings": {
+    "ffmpeg_version": "ffmpeg version 7.1 Copyright (c) 2000-2024 the FFmpeg developers",
+    "ffmpeg_sha256": "sha256:6d175a4743ca50256e89a8cdd731100f9cee33bd79aeea46894d209410dc6617",
+    "mp4": {
+      "file": "ench-10y.mp4",
+      "sha256": "sha256:d368365f33ce5de8a25f360b07af0e2c07631679809fb12c8e0b2d945261336b",
+      "codec": "h264",
+      "crf": 18
+    },
+    "gif": {
+      "file": "ench-10y.gif",
+      "sha256": "sha256:557c9d4fb4517b755a12a759746d976da2aa762c1d34ff0d66de0714c5ca0bda",
+      "palette": "all-frames global"
+    }
+  }
+}
