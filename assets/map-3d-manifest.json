@@ -1,14 +1,13 @@
 {
-  "status": "review_watermark_retained",
   "decision": 32,
-  "code_commit_sha": "ece8ec0ffa343e8ab9ec5a160c16b7fe202c73b4",
-  "generator_sha256": "sha256:8aadb1d530d81a0220c499f03f00592e498ba0b76c1695597ad30ff28ec6ddb2",
+  "status": "review_watermark_retained",
+  "approach": "B video renderer snapshots; v1-v7 abandoned (Yongwoo 2026-10-21)",
+  "code_commit_sha": "397b12820a339523f9bdc9b3d50dab4ca6999c95",
+  "generator_sha256": "sha256:9d95f5fa59ea9d96828bf0c5ab7cb8e78eb0bb657bb823b2d87307d4ef106466",
   "renderer_dependencies_sha256": {
-    "cooling_3d.py": "sha256:a3631cb8b8c6303dc0ba51db127af020838f0bc04940ce23530db05737f97026",
-    "solid_geometry.py": "sha256:b79a3adfea64527fffa71361cb9e9b210380888ec49b24497dbc519c0cd52eef",
+    "cooling_3d.py": "sha256:bef176afbb5ff691c38f33ab1d7c8ea35c40254bb86b9c621e5611b0538692f2",
     "cooling_palette.py": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
     "render_static.py": "sha256:0f0d2241a1a75c701574ea92ab8b930bbc20107fc763ad7c9c77eac650fee9d0",
-    "time_viz_proto.py": "sha256:d06b193be3988d8f85ec10585e95381fba9b370fcf4744e8141034e98c8f3f40",
     "render_timelapse.py": "sha256:3cb7e94a20083c00d429ac11a0c5d23574ac3dd16c4497adf51fc6e9fc6a7ce8"
   },
   "inputs_sha256": {
@@ -81,93 +80,37 @@
       "sensitivity": "uniform_perturbation"
     }
   },
-  "design_reference_sha256": "sha256:3dde88326e19703287620be288d4d046cc5b753f5b36c2cdbde3120f0f14d00c",
   "camera": {
-    "elevation": 45,
-    "azimuth": -105,
-    "projection": "perspective",
-    "focal_length": 1.0,
+    "elevation": 34,
+    "azimuth": -55,
+    "projection": "orthographic",
     "box_aspect": [
-      460.0,
-      630.0,
-      75.27272727272727
+      460,
+      630,
+      340
     ]
   },
-  "lighting": {
-    "value_faces": "unshaded; exact 2D RGBA",
-    "wall_style": "cell",
-    "walls": "cell RGB * (ambient 0.50 + Lambert 0.35); camera upper-left",
-    "wall_values": "decorative shading, read data colours only on unshaded end faces",
-    "light_vector": [
-      -0.4957291565460993,
-      0.2555868924438591,
-      0.8300168334202531
-    ],
-    "matplotlib_shade": false
+  "height_ratio": {
+    "numerator": 340,
+    "denominator": 450,
+    "box_units_per_numeric_hour": 0.7555555555555555,
+    "extended_range": "z aspect and zoom compensated; projected unit scale preserved"
   },
-  "background": "#f6f5ef",
-  "geometry": "zero-to-value columns; neutral zero-thickness coastal ribbon; no deep base",
+  "lighting": "disabled on every face, identical to B video",
+  "geometry": "original cell quads and shared-edge risers only; no perimeter columns",
   "pedestal": {
     "enabled": false,
-    "top": 0,
-    "bottom": null,
-    "reference_plate_thickness": 0,
-    "rim_width_km": 0.65,
-    "included_cells": 1002,
-    "includes_missing": true,
-    "thickness_has_data_meaning": false,
-    "bottom_ticks": false,
-    "value_face_rule": "original cell value/colour, only coastal vertices inset for rim"
+    "rim": false
   },
-  "view_z_limits": [
-    -540.0,
-    150.0
-  ],
-  "reference_height": 0,
-  "coastline": "thin zero-height rim only; no 2D coastline or geographic backdrop",
-  "depth_axis": {
-    "position_xy_km": [
-      300,
-      -100
-    ],
-    "ticks": [
-      -400,
-      0,
-      150
-    ],
-    "zero_height": 0,
-    "projection": "same perspective projection as cells; positive tick included",
-    "floating_left_guide": false
-  },
-  "floor_coastline": false,
-  "height_ratio": {
-    "numerator": 60.0,
-    "denominator": 550,
-    "relative_to_v5": 0.3333333333333333
-  },
+  "coastline": "B original reference and floor outlines",
+  "background": "#f6f5ef",
+  "missing": "47 gray zero-height markers; not zero values",
   "numeric_depth_ratio_all_four_maps": "1 clock hour = 1 equivalent-hour display height",
-  "mobile_decades": "2 columns x 3 rows; repeated subtitle once; sparse depth ticks",
-  "mobile_tick_css_pixels_at_350px": {
-    "decade_depth": 12.962962962962962,
-    "decade_colour": 13.125,
-    "single_depth_and_colour": 12.962962962962962
-  },
-  "missing": "gray reference-height marker, NOT zero",
-  "axis_pixels": [
-    550,
-    550
-  ],
-  "xy_limits_km": [
-    [
-      -200,
-      340
-    ],
-    [
-      -360,
-      310
-    ]
-  ],
-  "screen_resizing": "responsive thumbnails resize the entire map, not just its depth",
+  "colour_rule": "B loss: -110 dark blue, 0 blue, 125 white, 260 red; >=260 saturated",
+  "mobile_decades": "2 columns x 3 rows; intact B frames; 12.25px period headings at 350px",
+  "readability": "12px+ HTML unit/legend/period guide; click original for B frame fine print",
+  "installed_video_sha256": "sha256:f055e6390a65074582b4e57ed5421ccc3fd071e4b2cedda0acdf568161b8b994",
+  "installed_poster_sha256": "sha256:ed4852d1eced932418a0b88444b155147a531df90e132e81a70b1b91b5d14d37",
   "maps": {
     "sensitivity": {
       "depth_scale": {
@@ -178,28 +121,35 @@
         ],
         "ticks": [
           -400,
+          -300,
+          -200,
+          -100,
           0,
-          150
+          100
         ],
         "box_aspect": [
-          460.0,
-          630.0,
-          75.27272727272727
-        ]
+          460,
+          630,
+          415.55555555555554
+        ],
+        "zoom": 1.0386711495342789
       },
       "height": "-loss",
       "colour_bounds": [
-        251.72859893515607,
-        333.6654091521551
+        -110.0,
+        260.0
       ],
       "colour_ticks": [
-        251.72859893515607,
-        272.2128014894058,
-        292.6970040436556,
-        313.1812065979054,
-        333.6654091521551
+        -110,
+        0,
+        50,
+        125,
+        200,
+        260
       ],
-      "palette": "loss_red",
+      "palette": "gain_blue_loss_red",
+      "colour_quantity": "loss = -height",
+      "saturated_cells_above_260": 909,
       "data_range": [
         251.72859893515607,
         333.6654091521551
@@ -208,43 +158,48 @@
         -333.6654091521551,
         -251.72859893515607
       ],
+      "selected_cells": 1002,
       "valid_cells": 955,
       "missing_cells": 47,
-      "selected_cells": 1002,
       "period": "1991-2020 +1 K; pressure/system fixed"
     },
     "ench-loss": {
       "depth_scale": {
         "unit": "시간량/년",
         "limits": [
-          -400,
+          -300,
           150
         ],
         "ticks": [
-          -400,
+          -300,
+          -200,
+          -100,
           0,
-          150
+          100
         ],
         "box_aspect": [
-          460.0,
-          630.0,
-          75.27272727272727
-        ]
+          460,
+          630,
+          340.0
+        ],
+        "zoom": 1.0
       },
       "height": "-loss",
       "colour_bounds": [
-        0.0,
-        130.0
+        -110.0,
+        260.0
       ],
       "colour_ticks": [
-        0.0,
-        26.0,
-        52.0,
-        78.0,
-        104.0,
-        130.0
+        -110,
+        0,
+        50,
+        125,
+        200,
+        260
       ],
-      "palette": "loss_red",
+      "palette": "gain_blue_loss_red",
+      "colour_quantity": "loss = -height",
+      "saturated_cells_above_260": 0,
       "data_range": [
         33.37482266457573,
         126.2125492200048
@@ -253,44 +208,48 @@
         -126.2125492200048,
         -33.37482266457573
       ],
+      "selected_cells": 1002,
       "valid_cells": 955,
       "missing_cells": 47,
-      "selected_cells": 1002,
       "period": "1961-1990 vs 1991-2020"
     },
     "nch20-loss": {
       "depth_scale": {
         "unit": "시간/년",
         "limits": [
-          -400,
+          -300,
           150
         ],
         "ticks": [
-          -400,
+          -300,
+          -200,
+          -100,
           0,
-          150
+          100
         ],
         "box_aspect": [
-          460.0,
-          630.0,
-          75.27272727272727
-        ]
+          460,
+          630,
+          340.0
+        ],
+        "zoom": 1.0
       },
       "height": "-loss",
       "colour_bounds": [
-        -5.0,
-        95.0
+        -110.0,
+        260.0
       ],
       "colour_ticks": [
-        -5.0,
+        -110,
         0,
-        20,
-        40,
-        60,
-        80,
-        95.0
+        50,
+        125,
+        200,
+        260
       ],
-      "palette": "asymmetric_loss",
+      "palette": "gain_blue_loss_red",
+      "colour_quantity": "loss = -height",
+      "saturated_cells_above_260": 0,
       "data_range": [
         -2.0924174015390236,
         94.15209399267087
@@ -299,74 +258,136 @@
         -94.15209399267087,
         2.0924174015390236
       ],
+      "selected_cells": 1002,
       "valid_cells": 955,
       "missing_cells": 47,
-      "selected_cells": 1002,
       "period": "1961-1990 vs 1991-2020"
     },
     "time-maps": {
       "depth_scale": {
         "unit": "시간량/년",
         "limits": [
-          -400,
+          -300,
           150
         ],
         "ticks": [
-          -400,
+          -300,
+          -200,
+          -100,
           0,
-          150
+          100
         ],
         "box_aspect": [
-          460.0,
-          630.0,
-          75.27272727272727
-        ]
+          460,
+          630,
+          340.0
+        ],
+        "zoom": 1.0
       },
       "height": "delta",
       "colour_bounds": [
-        -300.0,
-        300.0
+        -110.0,
+        260.0
       ],
       "colour_ticks": [
-        -300,
+        -110,
         0,
-        300
+        50,
+        125,
+        200,
+        260
       ],
-      "palette": "loss_red_zero_white_gain_blue",
+      "palette": "gain_blue_loss_red",
+      "colour_quantity": "loss = -height",
+      "saturated_cells_above_260": 0,
       "data_range": [
-        -255.47015405542243,
-        70.23440286708501
+        -255.47015405542152,
+        70.23440286708592
       ],
       "height_range": [
-        -255.47015405542243,
-        70.23440286708501
+        -255.47015405542152,
+        70.23440286708592
       ],
+      "selected_cells": 1002,
       "valid_cells": 955,
       "missing_cells": 47,
-      "selected_cells": 1002,
       "period": "1961-1970 baseline; six nonoverlapping decades"
     }
   },
   "files": {
-    "sensitivity-3d.png": {
-      "sha256": "sha256:dfb6f64bfe1543685ea3d67ffe90b032d7cab00d54ebaeb30311750347172528",
-      "bytes": 131998
-    },
     "ench-loss-3d.png": {
-      "sha256": "sha256:956c2034cf831caf3620d804948086b53804be82373dcdcec2a17cff3922d33a",
-      "bytes": 134038
+      "sha256": "sha256:13c306a9e197ab3e76a632efd100143bbd7d621d4bc3f83e286e93c0fa6c30da",
+      "bytes": 148374,
+      "pixels": [
+        1200,
+        900
+      ]
     },
     "nch20-loss-3d.png": {
-      "sha256": "sha256:0efc09fce55be41275a3d4b130011551b05910a5755182eabaec56eee8c7856e",
-      "bytes": 134326
+      "sha256": "sha256:aae34934e3e364bd4fd5bccec378d95bd24f695ced3f86a6f22b65043c11d996",
+      "bytes": 156111,
+      "pixels": [
+        1200,
+        900
+      ]
+    },
+    "sensitivity-3d.png": {
+      "sha256": "sha256:f3ca79b237ebe8f81ddb9b860385fa24512b940d6e87c4bd3e663b81d3bdefe7",
+      "bytes": 172270,
+      "pixels": [
+        1200,
+        900
+      ]
     },
     "time-maps-3d-desktop.png": {
-      "sha256": "sha256:7b64a5ba922e4b8078e19c5c8716bafcdb36b58c9e934357e743874d04d6137a",
-      "bytes": 428971
+      "sha256": "sha256:d224e1969a30bc27f2d2d90f415c614523f986b6b41d91f07ce1b2061438bcac",
+      "bytes": 562236,
+      "pixels": [
+        3600,
+        2024
+      ]
     },
     "time-maps-3d-mobile.png": {
-      "sha256": "sha256:e903effcab4cffd2b228f33d69ebc18288015ad1b16658c46363011f8660d491",
-      "bytes": 501826
+      "sha256": "sha256:30421b2b6108d86672b7e073f89360072415a1b937bd0e54b3d49fd09afaf517",
+      "bytes": 654566,
+      "pixels": [
+        2400,
+        3036
+      ]
+    }
+  },
+  "snapshot_frames": {
+    "v8-frame-1961-1970.png": "sha256:70b8916406da2fffe01cdad84649f351781a4e55954d45c889a82db6f6b5531b",
+    "v8-frame-1971-1980.png": "sha256:45c1309ec578892e5de0be1883ccddc765d9584f84b07d1ac0e174e276aca014",
+    "v8-frame-1981-1990.png": "sha256:438c24c8fb77e998baed90fa3b3a026c7db872a3310e18538ef5220ad12effa6",
+    "v8-frame-1991-2000.png": "sha256:d25e9f193e557d3808bd3fab5e69007f9cd3be3e2dc23d237ada4c65af314671",
+    "v8-frame-2001-2010.png": "sha256:df9e7fc097fb25e1a7269ea3ec53e72d3f2f95bc01acab5835351ff6cb3f8e51",
+    "v8-frame-2011-2020.png": "sha256:fb7bb920da5664936826875f05af0bc3518646c153bc53176a58e0602e556946"
+  },
+  "poster_comparison": {
+    "dimensions": [
+      1200,
+      900
+    ],
+    "registration_or_resize": false,
+    "mean_absolute_channel_error_255": 2.102274074074074,
+    "rmse_255": 2.435737523615921,
+    "channel_error_p99_255": 7.0,
+    "fraction_pixels_max_channel_error_le_12": 0.9953916666666667,
+    "map_roi_xyxy": [
+      290,
+      175,
+      990,
+      735
+    ],
+    "map_roi_mean_absolute_channel_error_255": 2.142708333333333,
+    "map_roi_rmse_255": 2.4841519789299866,
+    "reason": "new PNG is pre-encode RGBA; installed poster is decoded H.264 yuv420p CRF19",
+    "tolerance": {
+      "mae_lte": 3,
+      "rmse_lte": 5,
+      "map_roi_mae_lte": 3,
+      "map_roi_rmse_lte": 7
     }
   }
 }
