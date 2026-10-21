@@ -1,13 +1,13 @@
 {
   "status": "review_watermark_retained",
-  "generated_at": "2026-10-20T12:48:56.556789+00:00",
+  "generated_at": "2026-10-21T04:30:07.044046+00:00",
   "source_commit": "4e33ce2921b8ebdb6e786752fa16d0d84c169afe",
   "source_path": "scripts/render_cooling_3d.py",
   "source_script_sha256": "sha256:0af4cbd6568d6f3802b33ebef9f61043598b3c34273eaa672a6e3bd9085a8967",
   "source_pr": "https://github.com/kimkv3/coolness_resource_atlas/pull/12",
-  "adaptation": "B only; shared red/blue palette; site tone; exact final video frame poster",
-  "render_code_commit_sha": "bc0cb5e29e2c5a04dcef39e5fb41aef7c62a0f95",
-  "generator_sha256": "sha256:a3631cb8b8c6303dc0ba51db127af020838f0bc04940ce23530db05737f97026",
+  "adaptation": "B snapshots; azimuth -145 from Yellow Sea; final decoded and raw frames",
+  "render_code_commit_sha": "254fcbc527f24d3311533dc98d91c40379eb8d2f",
+  "generator_sha256": "sha256:98012c37f04dbe4d01958fc9e25acfcaf30e045eb668023acdcea88ce7a266b5",
   "palette_sha256": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
   "input_provenance": {
     "generated_at": "2026-09-06T17:09:22.284600+00:00",
@@ -105,7 +105,7 @@
       "lighting": "disabled"
     },
     "camera": {
-      "azimuth_deg": -55,
+      "azimuth_deg": -145,
       "elevation_deg": 34,
       "projection": "orthographic"
     },
@@ -121,7 +121,9 @@
     "vertical_axis": "h/year, not terrain elevation or physical stored volume",
     "projection": "EPSG:5179",
     "autoplay": false,
-    "poster": "MP4 frame 239 (final frame), decoded losslessly to PNG"
+    "labels": "sea-side zero guide; projected north arrow; foreground island labels",
+    "poster": "MP4 frame 239 (final frame), decoded losslessly to PNG",
+    "raw_final_frame": "B_final_raw.png; exact final RGBA input to encoder"
   },
   "numeric_comparison": [
     {
@@ -186,7 +188,7 @@
     }
   ],
   "video": {
-    "elapsed_seconds": 7.68,
+    "elapsed_seconds": 7.87,
     "frame_count": 240,
     "fps": 24,
     "duration_seconds": 10,
@@ -203,16 +205,20 @@
   },
   "artifacts": {
     "B_animation.mp4": {
-      "bytes": 783395,
-      "sha256": "sha256:f055e6390a65074582b4e57ed5421ccc3fd071e4b2cedda0acdf568161b8b994"
+      "bytes": 879080,
+      "sha256": "sha256:87df8b706e36a31b38361f43fd8d89105e2b5c8a8b330d3620735c9e756fd894"
     },
     "B_final.png": {
-      "bytes": 258157,
-      "sha256": "sha256:ed4852d1eced932418a0b88444b155147a531df90e132e81a70b1b91b5d14d37"
+      "bytes": 259504,
+      "sha256": "sha256:24f30eb1c3b3b375bad2dc24e54e8c45d5da363f292cfbdafd8bd173847c6dab"
+    },
+    "B_final_raw.png": {
+      "bytes": 167013,
+      "sha256": "sha256:ef3eb553f5e30dbf7d99e78a2ed46fd7ce72bf99f30f57ca3a888a1eb59f0b9a"
     },
     "B_preview.gif": {
-      "bytes": 1394192,
-      "sha256": "sha256:3ace699f2c735d305a343d62f494946b24ac9709201d474c867875ff73a79821"
+      "bytes": 1511822,
+      "sha256": "sha256:e79c958fca3f5ea8039e7946e713ccc4f52d41f6410648a3e36dd3546cba70f1"
     },
     "numeric_comparison.csv": {
       "bytes": 839,

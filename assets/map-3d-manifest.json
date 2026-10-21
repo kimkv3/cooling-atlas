@@ -2,10 +2,10 @@
   "decision": 32,
   "status": "review_watermark_retained",
   "approach": "B video renderer snapshots; v1-v7 abandoned (Yongwoo 2026-10-21)",
-  "code_commit_sha": "397b12820a339523f9bdc9b3d50dab4ca6999c95",
-  "generator_sha256": "sha256:9d95f5fa59ea9d96828bf0c5ab7cb8e78eb0bb657bb823b2d87307d4ef106466",
+  "code_commit_sha": "254fcbc527f24d3311533dc98d91c40379eb8d2f",
+  "generator_sha256": "sha256:bd53ad7d04bfd1a7e797c5561766534d32256533e381358e77e9c58861a019f3",
   "renderer_dependencies_sha256": {
-    "cooling_3d.py": "sha256:bef176afbb5ff691c38f33ab1d7c8ea35c40254bb86b9c621e5611b0538692f2",
+    "cooling_3d.py": "sha256:98012c37f04dbe4d01958fc9e25acfcaf30e045eb668023acdcea88ce7a266b5",
     "cooling_palette.py": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
     "render_static.py": "sha256:0f0d2241a1a75c701574ea92ab8b930bbc20107fc763ad7c9c77eac650fee9d0",
     "render_timelapse.py": "sha256:3cb7e94a20083c00d429ac11a0c5d23574ac3dd16c4497adf51fc6e9fc6a7ce8"
@@ -82,7 +82,7 @@
   },
   "camera": {
     "elevation": 34,
-    "azimuth": -55,
+    "azimuth": -145,
     "projection": "orthographic",
     "box_aspect": [
       460,
@@ -105,12 +105,13 @@
   "coastline": "B original reference and floor outlines",
   "background": "#f6f5ef",
   "missing": "47 gray zero-height markers; not zero values",
+  "labels": "sea-side zero guide; projected north arrow; foreground island labels",
   "numeric_depth_ratio_all_four_maps": "1 clock hour = 1 equivalent-hour display height",
   "colour_rule": "B loss: -110 dark blue, 0 blue, 125 white, 260 red; >=260 saturated",
   "mobile_decades": "2 columns x 3 rows; intact B frames; 12.25px period headings at 350px",
   "readability": "12px+ HTML unit/legend/period guide; click original for B frame fine print",
-  "installed_video_sha256": "sha256:f055e6390a65074582b4e57ed5421ccc3fd071e4b2cedda0acdf568161b8b994",
-  "installed_poster_sha256": "sha256:ed4852d1eced932418a0b88444b155147a531df90e132e81a70b1b91b5d14d37",
+  "installed_video_sha256": "sha256:87df8b706e36a31b38361f43fd8d89105e2b5c8a8b330d3620735c9e756fd894",
+  "installed_poster_sha256": "sha256:24f30eb1c3b3b375bad2dc24e54e8c45d5da363f292cfbdafd8bd173847c6dab",
   "maps": {
     "sensitivity": {
       "depth_scale": {
@@ -316,40 +317,40 @@
   },
   "files": {
     "ench-loss-3d.png": {
-      "sha256": "sha256:13c306a9e197ab3e76a632efd100143bbd7d621d4bc3f83e286e93c0fa6c30da",
-      "bytes": 148374,
+      "sha256": "sha256:295ce835b649813989fdf45eb47c5ef1dfe730cf62e8f6a3874c91ea60b3a468",
+      "bytes": 153901,
       "pixels": [
         1200,
         900
       ]
     },
     "nch20-loss-3d.png": {
-      "sha256": "sha256:aae34934e3e364bd4fd5bccec378d95bd24f695ced3f86a6f22b65043c11d996",
-      "bytes": 156111,
+      "sha256": "sha256:4c57674b89f7063ec9ce893f40f41af4321f1973196819a18d8c5fe0421150b7",
+      "bytes": 157843,
       "pixels": [
         1200,
         900
       ]
     },
     "sensitivity-3d.png": {
-      "sha256": "sha256:f3ca79b237ebe8f81ddb9b860385fa24512b940d6e87c4bd3e663b81d3bdefe7",
-      "bytes": 172270,
+      "sha256": "sha256:a0a3dd7cc508ca4472bcc1c3f563159399d2e99a7929a803e815e9ff070989e9",
+      "bytes": 161652,
       "pixels": [
         1200,
         900
       ]
     },
     "time-maps-3d-desktop.png": {
-      "sha256": "sha256:d224e1969a30bc27f2d2d90f415c614523f986b6b41d91f07ce1b2061438bcac",
-      "bytes": 562236,
+      "sha256": "sha256:a719dc1d00cb4487c0ed87917af8476fdc4904117088afeff1a6e91e1ccc6770",
+      "bytes": 617204,
       "pixels": [
         3600,
         2024
       ]
     },
     "time-maps-3d-mobile.png": {
-      "sha256": "sha256:30421b2b6108d86672b7e073f89360072415a1b937bd0e54b3d49fd09afaf517",
-      "bytes": 654566,
+      "sha256": "sha256:9cb7b3328a38adabb012d3f599396eff2f1e861a04bb61bfa8e6ab8f75a153dd",
+      "bytes": 708661,
       "pixels": [
         2400,
         3036
@@ -357,12 +358,12 @@
     }
   },
   "snapshot_frames": {
-    "v8-frame-1961-1970.png": "sha256:70b8916406da2fffe01cdad84649f351781a4e55954d45c889a82db6f6b5531b",
-    "v8-frame-1971-1980.png": "sha256:45c1309ec578892e5de0be1883ccddc765d9584f84b07d1ac0e174e276aca014",
-    "v8-frame-1981-1990.png": "sha256:438c24c8fb77e998baed90fa3b3a026c7db872a3310e18538ef5220ad12effa6",
-    "v8-frame-1991-2000.png": "sha256:d25e9f193e557d3808bd3fab5e69007f9cd3be3e2dc23d237ada4c65af314671",
-    "v8-frame-2001-2010.png": "sha256:df9e7fc097fb25e1a7269ea3ec53e72d3f2f95bc01acab5835351ff6cb3f8e51",
-    "v8-frame-2011-2020.png": "sha256:fb7bb920da5664936826875f05af0bc3518646c153bc53176a58e0602e556946"
+    "v9-frame-1961-1970.png": "sha256:7c98c325b79adea3c28344ff3ee5f94754bbc6327154bbd4b3af6fa9e20692d5",
+    "v9-frame-1971-1980.png": "sha256:0014026507997d0f0ff4f36a8868d0aaf56dfcb4248d1d57ece7a955f3792f31",
+    "v9-frame-1981-1990.png": "sha256:23100ad28e1590a16f2ee1ef1ecc58842251f17ad079ca3d628270362c4255b1",
+    "v9-frame-1991-2000.png": "sha256:cd7470e456916bfe3654588f4d3269a36ebc6ff6720e9a9cd0e00aafed4d3e20",
+    "v9-frame-2001-2010.png": "sha256:c2fab944c5493932e6ba7e7108d9f16bdc00c273ddca6dac83ab2df88ca4b606",
+    "v9-frame-2011-2020.png": "sha256:ef3eb553f5e30dbf7d99e78a2ed46fd7ce72bf99f30f57ca3a888a1eb59f0b9a"
   },
   "poster_comparison": {
     "dimensions": [
@@ -370,18 +371,18 @@
       900
     ],
     "registration_or_resize": false,
-    "mean_absolute_channel_error_255": 2.102274074074074,
-    "rmse_255": 2.435737523615921,
+    "mean_absolute_channel_error_255": 2.096118827160494,
+    "rmse_255": 2.4165886960601974,
     "channel_error_p99_255": 7.0,
-    "fraction_pixels_max_channel_error_le_12": 0.9953916666666667,
+    "fraction_pixels_max_channel_error_le_12": 0.9958898148148149,
     "map_roi_xyxy": [
       290,
       175,
       990,
       735
     ],
-    "map_roi_mean_absolute_channel_error_255": 2.142708333333333,
-    "map_roi_rmse_255": 2.4841519789299866,
+    "map_roi_mean_absolute_channel_error_255": 2.1215799319727893,
+    "map_roi_rmse_255": 2.425092045381253,
     "reason": "new PNG is pre-encode RGBA; installed poster is decoded H.264 yuv420p CRF19",
     "tolerance": {
       "mae_lte": 3,
