@@ -1,13 +1,13 @@
 {
   "status": "review_watermark_retained",
-  "generated_at": "2026-10-21T04:30:07.044046+00:00",
+  "generated_at": "2026-10-21T05:55:59.387692+00:00",
   "source_commit": "4e33ce2921b8ebdb6e786752fa16d0d84c169afe",
   "source_path": "scripts/render_cooling_3d.py",
   "source_script_sha256": "sha256:0af4cbd6568d6f3802b33ebef9f61043598b3c34273eaa672a6e3bd9085a8967",
   "source_pr": "https://github.com/kimkv3/coolness_resource_atlas/pull/12",
-  "adaptation": "B snapshots; azimuth -145 from Yellow Sea; final decoded and raw frames",
-  "render_code_commit_sha": "254fcbc527f24d3311533dc98d91c40379eb8d2f",
-  "generator_sha256": "sha256:98012c37f04dbe4d01958fc9e25acfcaf30e045eb668023acdcea88ce7a266b5",
+  "adaptation": "B snapshots; azimuth -100; south slightly west looking north slightly east; final decoded and raw frames",
+  "render_code_commit_sha": "da32dc120843295141edd9fbab8b53b1e1652f8f",
+  "generator_sha256": "sha256:266669e7c8407405b89be8f37116052a392f76c06a87fde1c3cb39182805f7a8",
   "palette_sha256": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
   "input_provenance": {
     "generated_at": "2026-09-06T17:09:22.284600+00:00",
@@ -105,7 +105,7 @@
       "lighting": "disabled"
     },
     "camera": {
-      "azimuth_deg": -145,
+      "azimuth_deg": -100,
       "elevation_deg": 34,
       "projection": "orthographic"
     },
@@ -188,7 +188,7 @@
     }
   ],
   "video": {
-    "elapsed_seconds": 7.87,
+    "elapsed_seconds": 7.88,
     "frame_count": 240,
     "fps": 24,
     "duration_seconds": 10,
@@ -205,20 +205,20 @@
   },
   "artifacts": {
     "B_animation.mp4": {
-      "bytes": 879080,
-      "sha256": "sha256:87df8b706e36a31b38361f43fd8d89105e2b5c8a8b330d3620735c9e756fd894"
+      "bytes": 757140,
+      "sha256": "sha256:da826b771ef6f898bf629bedece92bc1bae3db7b0988afcc7e7708c3d76195b8"
     },
     "B_final.png": {
-      "bytes": 259504,
-      "sha256": "sha256:24f30eb1c3b3b375bad2dc24e54e8c45d5da363f292cfbdafd8bd173847c6dab"
+      "bytes": 249554,
+      "sha256": "sha256:7d9c67f0ccb70ba7188e5a4b871b4d23feeec6ab6f4c3cedea8c4b0c28cb7168"
     },
     "B_final_raw.png": {
-      "bytes": 167013,
-      "sha256": "sha256:ef3eb553f5e30dbf7d99e78a2ed46fd7ce72bf99f30f57ca3a888a1eb59f0b9a"
+      "bytes": 154405,
+      "sha256": "sha256:3ed2bfa80429b52ca004e491dc4d8720d886c424e2f6a6f6f23c828c983dd461"
     },
     "B_preview.gif": {
-      "bytes": 1511822,
-      "sha256": "sha256:e79c958fca3f5ea8039e7946e713ccc4f52d41f6410648a3e36dd3546cba70f1"
+      "bytes": 1440331,
+      "sha256": "sha256:e618fe71335ee04e776a53258de9072704c47c8dc3b7847da764ef7eed500415"
     },
     "numeric_comparison.csv": {
       "bytes": 839,
