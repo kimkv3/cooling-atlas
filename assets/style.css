@@ -17,3 +17,15 @@
 
 /* B frames remain pixel-intact; the external key stays readable on small screens. */
 .snapshot-guide{font-size:13px;line-height:1.65;color:var(--muted);padding:12px 16px;background:#f6f5ef}.snapshot-guide p{font-size:inherit;margin:4px 0 10px}.snapshot-scale{height:14px;margin:8px 8px 30px;position:relative;border:1px solid #71847c;background:linear-gradient(to right,#08306b 0%,#2879bd 29.73%,#fff 63.51%,#b2182b 100%)}.snapshot-scale span{position:absolute;top:18px;transform:translateX(-50%);font-size:12px;line-height:1.2;white-space:nowrap}.snapshot-scale span:first-child{transform:none}.snapshot-scale span:last-child{transform:translateX(-100%)}
+
+/* Decision 33: explain first; mobile stills use pixel-exact peninsula crops. */
+.plain-intro{max-width:1050px;font-size:1rem;line-height:1.7;margin:8px 0 18px}
+.mobile-decades{display:none}.crop-note{font-size:.78rem;color:var(--muted);margin:6px 0 14px}
+@media(max-width:760px){
+  .plain-intro{font-size:.92rem;line-height:1.65;margin:8px 0 16px}
+  .desktop-decades{display:none}.mobile-decades{display:grid;grid-template-columns:1fr;gap:24px}
+  #time-maps .mobile-decades figcaption{font-size:.88rem;margin:0 0 8px}
+  .mobile-decades figcaption strong{font-size:1.1rem}
+  .mobile-decades img,.map-view picture img{width:100%}
+  .snapshot-guide{padding:12px 8px}
+}

@@ -1,0 +1,150 @@
+{
+  "decision": 33,
+  "operation": "crop only; no resize or recolour",
+  "files": {
+    "decade-1961-1970-mobile.png": {
+      "source": "docs/results/map3d-toggle-20261020/v10-frame-1961-1970.png",
+      "source_sha256": "154896f2452db734ebb61f83a7ec25b63c417afa40a40290e12754f0ad937d37",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "bfaa521d4a8cf01e3e02c4cb2fe8083c42a57992b0f77c6a372c76ccc001ad8d",
+      "pixel_exact": true
+    },
+    "decade-1971-1980-mobile.png": {
+      "source": "docs/results/map3d-toggle-20261020/v10-frame-1971-1980.png",
+      "source_sha256": "e1a44c149c42c3ee8dd09432abdfffb2d7fc5434ba28f91ffc7b46dd76527e8c",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "7dfce3c368e841fb14a8bb780f371be4ad6963859a477744e0ead78f6c34f1fd",
+      "pixel_exact": true
+    },
+    "decade-1981-1990-mobile.png": {
+      "source": "docs/results/map3d-toggle-20261020/v10-frame-1981-1990.png",
+      "source_sha256": "659cfd2eb3924e046cc353f2773616467f25166e817d1987c8a85c107a916133",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "4c277afe49422b5a1891aae35002ec99b1afdf11490627bcb3452c835ac4090a",
+      "pixel_exact": true
+    },
+    "decade-1991-2000-mobile.png": {
+      "source": "docs/results/map3d-toggle-20261020/v10-frame-1991-2000.png",
+      "source_sha256": "e5578955df323aeaf36a8dd195b3c38a3845ceee40efad6183edca3ddea84cd5",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "1e508ed99eb9c38b43a0ef93bcb14a6f30aad0aabbef0a61467eee70163b21d5",
+      "pixel_exact": true
+    },
+    "decade-2001-2010-mobile.png": {
+      "source": "docs/results/map3d-toggle-20261020/v10-frame-2001-2010.png",
+      "source_sha256": "09ad00a23621d7e32ee2148f29ebd2cdf150a06e472daebf9d7cd711b9a985ca",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "fb4a117329bd07786446f6bed7f990f0b4bab25f8a0bf73b6f4745c746604166",
+      "pixel_exact": true
+    },
+    "decade-2011-2020-mobile.png": {
+      "source": "docs/results/map3d-toggle-20261020/v10-frame-2011-2020.png",
+      "source_sha256": "3ed2bfa80429b52ca004e491dc4d8720d886c424e2f6a6f6f23c828c983dd461",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "3f44183ca46b892dc5ea0ac760da8c2acda7eb9dfabf035f8861493d3e51feb8",
+      "pixel_exact": true
+    },
+    "sensitivity-3d-mobile.png": {
+      "source": "site/assets/sensitivity-3d.png",
+      "source_sha256": "ff4ca60aeb56fb4c1506b1542620059cf577f30dcca33290bf1c094cf7499f58",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "00ffbaa4ad6a779ced8971ea2d556c2dcb622a2b05d295b0e89cf0de767536d2",
+      "pixel_exact": true
+    },
+    "ench-loss-3d-mobile.png": {
+      "source": "site/assets/ench-loss-3d.png",
+      "source_sha256": "8f22e60fd5308df172504ebd7618934da5c9b772c1903c80cde710b50f82751e",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "cf9528e257f5f7ce3363ace55c97a59e8e14ab8cc677fdb78df5a3c70f9d5878",
+      "pixel_exact": true
+    },
+    "nch20-loss-3d-mobile.png": {
+      "source": "site/assets/nch20-loss-3d.png",
+      "source_sha256": "7005d260bbc169d05d6384ab138cc1a5cfbf2d2fcd0af46b227b735946206f5f",
+      "crop_xyxy": [
+        485,
+        345,
+        790,
+        745
+      ],
+      "pixels": [
+        305,
+        400
+      ],
+      "sha256": "d9fe12540ceaa3ee2b8bd73fda0dc5c9bed21ebfcded21ab08bb0bba00623df1",
+      "pixel_exact": true
+    }
+  }
+}
