@@ -1,0 +1,280 @@
+{
+  "license": "CC0",
+  "license_url": "https://www.wikidata.org/wiki/Wikidata:Licensing",
+  "retrieved_at": "2026-10-22T10:02:26.090693+00:00",
+  "note": "City reference points, not administrative centroids or averages",
+  "points": [
+    {
+      "label": "서울특별시",
+      "lat": 37.56,
+      "lon": 126.99,
+      "wikidata": "Q8684",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q8684.json",
+      "revision": 2559541096,
+      "source_label": "Seoul",
+      "source_coordinate": {
+        "latitude": 37.56,
+        "longitude": 126.99,
+        "altitude": null,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "부산광역시",
+      "lat": 35.18,
+      "lon": 129.075,
+      "wikidata": "Q16520",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q16520.json",
+      "revision": 2553222236,
+      "source_label": "Busan",
+      "source_coordinate": {
+        "latitude": 35.18,
+        "longitude": 129.075,
+        "altitude": null,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "대구광역시",
+      "lat": 35.87167,
+      "lon": 128.60167,
+      "wikidata": "Q20927",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q20927.json",
+      "revision": 2556896822,
+      "source_label": "Daegu",
+      "source_coordinate": {
+        "latitude": 35.87166666666667,
+        "longitude": 128.60166666666666,
+        "altitude": null,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "인천광역시",
+      "lat": 37.46389,
+      "lon": 126.64861,
+      "wikidata": "Q20934",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q20934.json",
+      "revision": 2553220945,
+      "source_label": "Incheon",
+      "source_coordinate": {
+        "latitude": 37.463888888889,
+        "longitude": 126.64861111111,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "광주광역시",
+      "lat": 35.16667,
+      "lon": 126.91667,
+      "wikidata": "Q41283",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q41283.json",
+      "revision": 2559137275,
+      "source_label": "Gwangju",
+      "source_coordinate": {
+        "latitude": 35.166666666667,
+        "longitude": 126.91666666667,
+        "altitude": null,
+        "precision": null,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "대전광역시",
+      "lat": 36.35,
+      "lon": 127.385,
+      "wikidata": "Q20921",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q20921.json",
+      "revision": 2541079581,
+      "source_label": "Daejeon",
+      "source_coordinate": {
+        "latitude": 36.35,
+        "longitude": 127.385,
+        "altitude": null,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "울산광역시",
+      "lat": 35.55,
+      "lon": 129.31667,
+      "wikidata": "Q41278",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q41278.json",
+      "revision": 2541075424,
+      "source_label": "Ulsan",
+      "source_coordinate": {
+        "latitude": 35.55,
+        "longitude": 129.31666666667,
+        "altitude": null,
+        "precision": null,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "세종특별자치시",
+      "lat": 36.487,
+      "lon": 127.28223,
+      "wikidata": "Q20929",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q20929.json",
+      "revision": 2548630239,
+      "source_label": "Sejong",
+      "source_coordinate": {
+        "latitude": 36.487002,
+        "longitude": 127.282234,
+        "altitude": null,
+        "precision": 1e-06,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "경기도 · 수원",
+      "lat": 37.28583,
+      "lon": 127.01,
+      "wikidata": "Q20714",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q20714.json",
+      "revision": 2529426552,
+      "source_label": "Suwon",
+      "source_coordinate": {
+        "latitude": 37.285833333333,
+        "longitude": 127.01,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "강원특별자치도 · 춘천",
+      "lat": 37.87472,
+      "lon": 127.73417,
+      "wikidata": "Q42148",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q42148.json",
+      "revision": 2548913007,
+      "source_label": "Chuncheon",
+      "source_coordinate": {
+        "latitude": 37.874722222222,
+        "longitude": 127.73416666667,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "충청북도 · 청주",
+      "lat": 36.63722,
+      "lon": 127.48972,
+      "wikidata": "Q42147",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q42147.json",
+      "revision": 2506107993,
+      "source_label": "Cheongju",
+      "source_coordinate": {
+        "latitude": 36.637222222222,
+        "longitude": 127.48972222222,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "충청남도 · 홍성",
+      "lat": 36.59944,
+      "lon": 126.66278,
+      "wikidata": "Q50343",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q50343.json",
+      "revision": 2381750786,
+      "source_label": "Hongseong County",
+      "source_coordinate": {
+        "latitude": 36.599444444444,
+        "longitude": 126.66277777778,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "전북특별자치도 · 전주",
+      "lat": 35.82389,
+      "lon": 127.1475,
+      "wikidata": "Q42140",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q42140.json",
+      "revision": 2548911485,
+      "source_label": "Jeonju",
+      "source_coordinate": {
+        "latitude": 35.82388888888889,
+        "longitude": 127.1475,
+        "altitude": null,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "전라남도 · 무안",
+      "lat": 34.98972,
+      "lon": 126.47139,
+      "wikidata": "Q50241",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q50241.json",
+      "revision": 2537762802,
+      "source_label": "Muan County",
+      "source_coordinate": {
+        "latitude": 34.989722222222,
+        "longitude": 126.47138888889,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "경상북도 · 안동",
+      "lat": 36.56556,
+      "lon": 128.725,
+      "wikidata": "Q42116",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q42116.json",
+      "revision": 2548898737,
+      "source_label": "Andong",
+      "source_coordinate": {
+        "latitude": 36.565555555556,
+        "longitude": 128.725,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "경상남도 · 창원",
+      "lat": 35.22806,
+      "lon": 128.68111,
+      "wikidata": "Q243327",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q243327.json",
+      "revision": 2527726535,
+      "source_label": "Changwon",
+      "source_coordinate": {
+        "latitude": 35.228055555556,
+        "longitude": 128.68111111111,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "label": "제주특별자치도 · 제주",
+      "lat": 33.50972,
+      "lon": 126.52194,
+      "wikidata": "Q42142",
+      "source": "https://www.wikidata.org/wiki/Special:EntityData/Q42142.json",
+      "revision": 2548608533,
+      "source_label": "Jeju",
+      "source_coordinate": {
+        "latitude": 33.509722222222,
+        "longitude": 126.52194444444,
+        "altitude": null,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    }
+  ]
+}

@@ -29,3 +29,20 @@
   .mobile-decades img,.map-view picture img{width:100%}
   .snapshot-guide{padding:12px 8px}
 }
+
+/* Decision 34: review trial, no trackers or motion without user intent. */
+button,select{font:inherit;color:var(--ink);background:#fff;border:1px solid #71847c;border-radius:6px;padding:9px 12px;min-height:44px;cursor:pointer}
+button[aria-pressed=true]{color:#fff;background:var(--ink)}button:disabled{opacity:.65;cursor:not-allowed}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #225e62;outline-offset:4px}
+.interactive-layout,.location-layout{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+#cooling-3d{border:1px solid var(--line);border-radius:12px;padding:24px;margin:16px 0 32px;background:#ffffff75}
+#cooling-3d>p{max-width:850px}.year-mode{border:0;padding:0;margin:0 0 18px}.year-mode legend{font-size:.85rem;color:var(--muted)}.year-mode label{display:inline-flex;gap:6px;padding:10px 12px 10px 0;min-height:44px;align-items:center}.year-mode input{width:18px;height:18px;accent-color:var(--ink)}
+#year-current{display:block;font-size:3.8rem;line-height:1.15;letter-spacing:-.04em;font-variant-numeric:tabular-nums}#year-period{margin:6px 0;font-weight:650}#year-slider{display:block;width:100%;height:44px;margin:0;accent-color:#225e62;cursor:ew-resize;touch-action:pan-y}.range-ends{display:flex;justify-content:space-between;font-size:.8rem}.interactive-buttons{display:flex;flex-wrap:wrap;gap:8px}#slider-help,#frame-status{font-size:.82rem}#frame-status{min-height:1.8em}
+#time-maps .interactive-scene img{width:280px;max-width:100%;margin:auto;border:0;border-radius:0}#time-maps .interactive-scene .flat-frame{width:100%;max-width:480px;height:695px;object-fit:contain}.interactive-scene{background:#f6f5ef;padding:8px 12px}.interactive-scene figcaption{margin:10px 4px}.original-video{margin-top:20px}.original-video summary{cursor:pointer;padding:8px 0}.original-video video{margin-top:12px}
+.mobile-decades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.mobile-decades figcaption{margin:0 0 8px}.mobile-decades img{max-width:305px;margin:auto}
+[data-map-panel="3d"]>a>picture img{max-width:305px;margin:auto}.snapshot-guide{border-radius:8px}
+#my-location select{display:block;width:100%;margin:8px 0}#my-location label,.privacy-note{font-size:.9rem}.location-map{position:relative;max-width:480px;margin:auto}.location-map img{width:100%;border:0;border-radius:0}#location-dot{position:absolute;width:16px;height:16px;transform:translate(-50%,-50%);border:3px solid #fff;border-radius:50%;background:#172f53;box-shadow:0 0 0 2px #172f53}#location-card{background:#fff;border:1px solid #71847c;border-radius:10px;padding:16px}#location-card dd{margin:0 0 14px}#location-card strong{font-size:1.45rem}#location-card p{font-size:.85rem}#location-detail{font-variant-numeric:tabular-nums}
+@media(max-width:760px){.interactive-layout,.location-layout{grid-template-columns:1fr;gap:20px}#cooling-3d{padding:16px 12px}#year-current{font-size:3.25rem}.mobile-decades{grid-template-columns:1fr}.interactive-scene{padding:8px 0}#time-maps .interactive-scene img{width:280px}.interactive-buttons button{font-size:.85rem}.location-layout{gap:16px}}
+@media(prefers-reduced-motion:reduce){body.time-story{background:#eff7ff!important}}
+.interactive-scene{grid-column:2;grid-row:1 / span 2}.interactive-layout>.snapshot-guide{grid-column:1;grid-row:2}#frame-status:empty{display:none}
+@media(max-width:760px){.interactive-layout{display:flex;flex-direction:column}.year-console{position:sticky;top:0;z-index:3;background:#f5f7f7;border-bottom:1px solid #71847c;padding:8px;width:100%;border-radius:8px}.year-mode{margin-bottom:4px}.year-mode legend{font-size:.75rem}.year-mode label{padding-top:4px;padding-bottom:4px}.year-console label[for=year-slider]{display:flex;align-items:center;gap:14px}#year-current{font-size:2.4rem}#year-period{font-size:.85rem;margin:2px 0}.interactive-buttons{margin-top:6px}.interactive-scene{width:100%;order:1}.interactive-layout>.snapshot-guide{order:2;width:100%}}
