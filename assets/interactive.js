@@ -23,15 +23,15 @@
       await load(scene.file);
       if (token !== serial) return;
       frame.src = scene.file;
-      frame.alt = `${scene.period} 냉기 자원 변화, 1961–1970 대비. ${view === '3d' ? '아래로 내려갈수록 감소.' : '같은 B 색 범례의 2D 지도.'} 회색은 자료 없음.`;
+      frame.alt = `${scene.period} 냉기 자원 변화, 1961–1970 대비. ${view === '3d' ? '아래로 내려갈수록 감소.' : '3D와 같은 색 눈금의 평평한 2D 지도.'} 회색은 자료 없음.`;
       yearText.textContent = `${scene.year}`;
       $('year-period').textContent = scene.period + (mode === 'decade' && scene.year < 1970 ? ' · 첫 10년 자료로 표시' : '');
       const sceneNote = $('scene-note');
       // Commit caption only with its decoded image; failed/stale requests keep both.
       sceneNote.textContent = mode === 'decade' && scene.year <= 1970
-        ? '이 시기가 기준(0)이라 자료가 있는 칸은 모두 파란색입니다. 회색은 자료 없음입니다.'
+        ? '처음 10년과 같은 양이라 0이에요. 자료가 있는 칸은 모두 파란색이고, 회색은 자료가 없는 곳이에요.'
         : mode === 'annual' && scene.year === 1961
-          ? '1961년은 이 자료에서 기준 10년 평균보다 냉기 자원이 적었던 해입니다 — 해마다 크게 흔들립니다. 처리 오류가 주원인이라는 근거는 찾지 못했지만, 당시 관측자료와의 대조는 아직 못 했습니다.'
+          ? '1961년은 이 자료에서 처음 10년 평균보다 자연 에어컨이 식혀 줄 양이 적었던 해예요. 해마다 크게 오르내리지만, 이 차이가 주로 자료 처리 오류 때문이라는 근거는 찾지 못했어요. 당시 실제 날씨 기록과 맞춰 보는 일은 아직 못 했어요.'
           : '';
       sceneNote.hidden = !sceneNote.textContent;
       $('frame-status').textContent = '';
@@ -74,6 +74,7 @@
   });
   document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
   $('interactive-controls').hidden = false;
+  $('view-controls').hidden = false;
 
   // Build-time CC0 source snapshot; no geocoding or external service at runtime.
   let regions = [];
@@ -97,10 +98,10 @@
       if (!result) { resetLocation('국내 자료 범위 밖이거나 15km 안에 유효 칸이 없습니다. 아래에서 시·도 대표 지점을 골라 주세요.'); return; }
       const c = result.cell;
       $('location-title').textContent = label;
-      $('location-detail').textContent = `가장 가까운 유효 칸 ${c[1]}°N, ${c[2]}°E · 약 ${result.distance.toFixed(1)}km 거리` + (accuracy ? ` · 기기 위치 오차 약 ${Math.round(accuracy)}m` : ' · 행정구역 평균 아님');
+      $('location-detail').textContent = `자료가 있는 가장 가까운 칸 ${c[1]}°N, ${c[2]}°E · 약 ${result.distance.toFixed(1)}km 거리` + (accuracy ? ` · 기기 위치 오차 약 ${Math.round(accuracy)}m` : ' · 행정구역 평균 아님');
       for (const [id, value] of [['loss30',c[3]], ['loss10',c[4]], ['sensitivity1k',c[5]]]) $(id).textContent = value.toFixed(1);
       const dot = $('location-dot'); dot.style.left = `${c[6]*100}%`; dot.style.top = `${c[7]*100}%`; dot.hidden = false;
-      $('location-card').hidden = false; $('location-status').textContent = '계산 완료 · 점은 기기 위치가 아닌 선택된 칸의 중심입니다.';
+      $('location-card').hidden = false; $('location-status').textContent = '계산했어요. 점은 기기 위치가 아니라 선택된 칸의 가운데예요.';
     } catch (_) { if (token === locationToken) resetLocation('자료를 불러오지 못했습니다. 잠시 후 다시 선택해 주세요.'); }
   }
   $('locate-button').addEventListener('click', () => {

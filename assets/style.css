@@ -50,3 +50,46 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 /* D-43: explanation outside the raster, tied to the displayed scene. */
 .scene-note { margin: 0 0 .75rem; padding: .7rem; border-left: 3px solid #2879bd; background: #edf4fa; color: #203c3c; font-weight: 600; }
 #year-baseline { margin: .6rem 0; font-size: .9rem; }
+
+/* Decision 36: one familiar analogy, then a compact map control bar.
+   The original image is contained, never cropped. Explanations scroll below it. */
+.intro-limits { max-width: 1050px; font-size: .85rem; line-height: 1.6; }
+.scene-details { grid-column: 1; grid-row: 2; font-size: .9rem; min-width: 0; }
+.interactive-layout > .snapshot-guide { grid-row: 3; }
+.interactive-scene { grid-row: 1 / span 3; }
+.year-bar > #year-play { margin-top: 8px; }
+.year-bar .year-label { display: block; }
+@media (max-width: 760px) {
+  .intro-limits { font-size: .78rem; margin: 8px 0; }
+  .story-intro .plain-intro { margin-bottom: 12px; }
+  .interactive-layout { gap: 12px; }
+  .year-console { padding: 4px; border: 1px solid #71847c; }
+  .year-bar { display: grid; grid-template-columns: auto minmax(44px, 1fr) 44px auto; gap: 5px; align-items: center; }
+  .year-bar label[for=year-slider] { grid-column: 1; grid-row: 1; display: block; }
+  #year-current { font-size: 1.65rem; line-height: 1.2; }
+  #year-slider { grid-column: 2; grid-row: 1; min-width: 0; }
+  .year-bar > #year-play { grid-column: 3; grid-row: 1; margin: 0; padding: 0; width: 44px; font-size: 0; }
+  #year-play::before { content: '▶'; font-size: 1rem; }
+  #year-play[aria-pressed=true]::before { content: 'Ⅱ'; }
+  .year-mode { grid-column: 4; grid-row: 1; display: flex; gap: 0; margin: 0; min-width: 0; }
+  .year-mode label { position: relative; padding: 0; min-height: 44px; }
+  .mode-label { display: flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; font-size: .75rem; border: 1px solid #71847c; cursor: pointer; }
+  .year-mode label:first-of-type .mode-label { border-radius: 6px 0 0 6px; }
+  .year-mode label:last-of-type .mode-label { border-radius: 0 6px 6px 0; }
+  .year-mode input:checked + .mode-label { background: var(--ink); color: white; }
+  .year-mode input:focus-visible + .mode-label { outline: 3px solid #b56b21; outline-offset: 2px; }
+  .year-mode input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; z-index: 1; cursor: pointer; }
+  .year-bar .year-label, .year-mode legend {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    clip-path: inset(50%); overflow: hidden; white-space: nowrap;
+  }
+  .mode-average, .year-console .range-ends { display: none; }
+  #time-maps .interactive-scene img:not(.flat-frame) {
+    width: min(300px, calc((100svh - 92px) * 280 / 695));
+    max-width: 100%; height: auto;
+  }
+  .interactive-scene { order: 1; }
+  .scene-details { order: 2; width: 100%; }
+  .interactive-layout > .snapshot-guide { order: 3; }
+  .scene-details p { margin: 8px 0; }
+}
