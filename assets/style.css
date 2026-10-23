@@ -46,3 +46,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 @media(prefers-reduced-motion:reduce){body.time-story{background:#eff7ff!important}}
 .interactive-scene{grid-column:2;grid-row:1 / span 2}.interactive-layout>.snapshot-guide{grid-column:1;grid-row:2}#frame-status:empty{display:none}
 @media(max-width:760px){.interactive-layout{display:flex;flex-direction:column}.year-console{position:sticky;top:0;z-index:3;background:#f5f7f7;border-bottom:1px solid #71847c;padding:8px;width:100%;border-radius:8px}.year-mode{margin-bottom:4px}.year-mode legend{font-size:.75rem}.year-mode label{padding-top:4px;padding-bottom:4px}.year-console label[for=year-slider]{display:flex;align-items:center;gap:14px}#year-current{font-size:2.4rem}#year-period{font-size:.85rem;margin:2px 0}.interactive-buttons{margin-top:6px}.interactive-scene{width:100%;order:1}.interactive-layout>.snapshot-guide{order:2;width:100%}}
+
+/* D-43: explanation outside the raster, tied to the displayed scene. */
+.scene-note { margin: 0 0 .75rem; padding: .7rem; border-left: 3px solid #2879bd; background: #edf4fa; color: #203c3c; font-weight: 600; }
+#year-baseline { margin: .6rem 0; font-size: .9rem; }

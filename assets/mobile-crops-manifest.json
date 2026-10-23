@@ -1,10 +1,10 @@
 {
-  "decision": 33,
+  "decision": 35,
   "operation": "crop only; no resize or recolour",
   "files": {
     "decade-1961-1970-mobile.png": {
-      "source": "docs/results/map3d-toggle-20261020/v10-frame-1961-1970.png",
-      "source_sha256": "154896f2452db734ebb61f83a7ec25b63c417afa40a40290e12754f0ad937d37",
+      "source": "docs/results/d43-20261023/maps/v10-frame-1961-1970.png",
+      "source_sha256": "43aa300619d32c6a6e7ebca9c88d04c27c26fa3ea6986ded681ef49a87e346a2",
       "crop_xyxy": [
         485,
         345,
@@ -15,12 +15,12 @@
         305,
         400
       ],
-      "sha256": "bfaa521d4a8cf01e3e02c4cb2fe8083c42a57992b0f77c6a372c76ccc001ad8d",
+      "sha256": "44e2ff775d6915a5e7d912a4547798c62af22e0b3ea8d1ab1e1e3c75a98e8d3a",
       "pixel_exact": true
     },
     "decade-1971-1980-mobile.png": {
-      "source": "docs/results/map3d-toggle-20261020/v10-frame-1971-1980.png",
-      "source_sha256": "e1a44c149c42c3ee8dd09432abdfffb2d7fc5434ba28f91ffc7b46dd76527e8c",
+      "source": "docs/results/d43-20261023/maps/v10-frame-1971-1980.png",
+      "source_sha256": "5297bdf88a180d7f21cb567e9003656ec10ee16bdf6b988cb413c82ea5804a7d",
       "crop_xyxy": [
         485,
         345,
@@ -31,12 +31,12 @@
         305,
         400
       ],
-      "sha256": "7dfce3c368e841fb14a8bb780f371be4ad6963859a477744e0ead78f6c34f1fd",
+      "sha256": "950e8fbb538015e400913f9107144280c4d01afe229fae0cd2e1a9b958c8cc5f",
       "pixel_exact": true
     },
     "decade-1981-1990-mobile.png": {
-      "source": "docs/results/map3d-toggle-20261020/v10-frame-1981-1990.png",
-      "source_sha256": "659cfd2eb3924e046cc353f2773616467f25166e817d1987c8a85c107a916133",
+      "source": "docs/results/d43-20261023/maps/v10-frame-1981-1990.png",
+      "source_sha256": "5294e27d6b24ca506cc7d1ee054c091321ccd859d7bd385101d13a45b24ab380",
       "crop_xyxy": [
         485,
         345,
@@ -47,12 +47,12 @@
         305,
         400
       ],
-      "sha256": "4c277afe49422b5a1891aae35002ec99b1afdf11490627bcb3452c835ac4090a",
+      "sha256": "a6239cf602049d2abfdb752a0a0ad8b49cc999f013c1573900471a7d7d54fb27",
       "pixel_exact": true
     },
     "decade-1991-2000-mobile.png": {
-      "source": "docs/results/map3d-toggle-20261020/v10-frame-1991-2000.png",
-      "source_sha256": "e5578955df323aeaf36a8dd195b3c38a3845ceee40efad6183edca3ddea84cd5",
+      "source": "docs/results/d43-20261023/maps/v10-frame-1991-2000.png",
+      "source_sha256": "45ea450bd926309da0f95ead5b9f1892b2bbcc7d631a98585a5a3800baf6cfc8",
       "crop_xyxy": [
         485,
         345,
@@ -63,12 +63,12 @@
         305,
         400
       ],
-      "sha256": "1e508ed99eb9c38b43a0ef93bcb14a6f30aad0aabbef0a61467eee70163b21d5",
+      "sha256": "e1fd03e4bcba3cbe67272d2d18011cd1bd4477f5ee0ef0a516efe07232807448",
       "pixel_exact": true
     },
     "decade-2001-2010-mobile.png": {
-      "source": "docs/results/map3d-toggle-20261020/v10-frame-2001-2010.png",
-      "source_sha256": "09ad00a23621d7e32ee2148f29ebd2cdf150a06e472daebf9d7cd711b9a985ca",
+      "source": "docs/results/d43-20261023/maps/v10-frame-2001-2010.png",
+      "source_sha256": "7f2d098e9177c8885c5d1f0fa9576b1cc0c5e4b6f2cf02b05135f11c3facf81f",
       "crop_xyxy": [
         485,
         345,
@@ -79,12 +79,12 @@
         305,
         400
       ],
-      "sha256": "fb4a117329bd07786446f6bed7f990f0b4bab25f8a0bf73b6f4745c746604166",
+      "sha256": "d284f140f990feb08dce26cdd7d19a42a0f505abb7641aae61f33090c5191a2d",
       "pixel_exact": true
     },
     "decade-2011-2020-mobile.png": {
-      "source": "docs/results/map3d-toggle-20261020/v10-frame-2011-2020.png",
-      "source_sha256": "3ed2bfa80429b52ca004e491dc4d8720d886c424e2f6a6f6f23c828c983dd461",
+      "source": "docs/results/d43-20261023/maps/v10-frame-2011-2020.png",
+      "source_sha256": "120b5e984984454a2050e22e9fb6cd2e5035a981f78ff3a3cf7e68e244b3a14c",
       "crop_xyxy": [
         485,
         345,
@@ -95,12 +95,12 @@
         305,
         400
       ],
-      "sha256": "3f44183ca46b892dc5ea0ac760da8c2acda7eb9dfabf035f8861493d3e51feb8",
+      "sha256": "5536e03bb7f45d909f81b9725bd763064d87bb7bca56120696fc9ddde316c6e3",
       "pixel_exact": true
     },
     "sensitivity-3d-mobile.png": {
       "source": "site/assets/sensitivity-3d.png",
-      "source_sha256": "ff4ca60aeb56fb4c1506b1542620059cf577f30dcca33290bf1c094cf7499f58",
+      "source_sha256": "26518e949fb6bef78f4bbd4b4e8cd85a7eee2182522ca2ce3cd284584d6407f0",
       "crop_xyxy": [
         485,
         345,
@@ -111,12 +111,12 @@
         305,
         400
       ],
-      "sha256": "00ffbaa4ad6a779ced8971ea2d556c2dcb622a2b05d295b0e89cf0de767536d2",
+      "sha256": "34879c0fc0952899088ff1187ede9fad5d746f0576c4d6693dc43f52ca8b369c",
       "pixel_exact": true
     },
     "ench-loss-3d-mobile.png": {
       "source": "site/assets/ench-loss-3d.png",
-      "source_sha256": "8f22e60fd5308df172504ebd7618934da5c9b772c1903c80cde710b50f82751e",
+      "source_sha256": "78b0bdc4bf9dd4f385f41865cf58c425a01c94e9580042319706c0ffac8f3d37",
       "crop_xyxy": [
         485,
         345,
@@ -127,12 +127,12 @@
         305,
         400
       ],
-      "sha256": "cf9528e257f5f7ce3363ace55c97a59e8e14ab8cc677fdb78df5a3c70f9d5878",
+      "sha256": "10d70d623a53c4cde3ed2852aa12a35c48a4ba0a359c96fa8993d78b229560bb",
       "pixel_exact": true
     },
     "nch20-loss-3d-mobile.png": {
       "source": "site/assets/nch20-loss-3d.png",
-      "source_sha256": "7005d260bbc169d05d6384ab138cc1a5cfbf2d2fcd0af46b227b735946206f5f",
+      "source_sha256": "57ee871506c1d713d17f994c5a464ec413067403510b1f76ad47bcb81e94e257",
       "crop_xyxy": [
         485,
         345,
@@ -143,7 +143,7 @@
         305,
         400
       ],
-      "sha256": "d9fe12540ceaa3ee2b8bd73fda0dc5c9bed21ebfcded21ab08bb0bba00623df1",
+      "sha256": "69f032dd9edd73fb0d72cd7bf617368b28b5e94cbe30ea5a6eb72513e986da4e",
       "pixel_exact": true
     }
   }

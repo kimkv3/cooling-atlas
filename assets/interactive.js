@@ -26,6 +26,14 @@
       frame.alt = `${scene.period} 냉기 자원 변화, 1961–1970 대비. ${view === '3d' ? '아래로 내려갈수록 감소.' : '같은 B 색 범례의 2D 지도.'} 회색은 자료 없음.`;
       yearText.textContent = `${scene.year}`;
       $('year-period').textContent = scene.period + (mode === 'decade' && scene.year < 1970 ? ' · 첫 10년 자료로 표시' : '');
+      const sceneNote = $('scene-note');
+      // Commit caption only with its decoded image; failed/stale requests keep both.
+      sceneNote.textContent = mode === 'decade' && scene.year <= 1970
+        ? '이 시기가 기준(0)이라 자료가 있는 칸은 모두 파란색입니다. 회색은 자료 없음입니다.'
+        : mode === 'annual' && scene.year === 1961
+          ? '1961년은 이 자료에서 기준 10년 평균보다 냉기 자원이 적었던 해입니다 — 해마다 크게 흔들립니다. 처리 오류가 주원인이라는 근거는 찾지 못했지만, 당시 관측자료와의 대조는 아직 못 했습니다.'
+          : '';
+      sceneNote.hidden = !sceneNote.textContent;
       $('frame-status').textContent = '';
       frame.setAttribute('aria-busy', 'false');
       // Only a neighbour is prefetched, only after user interaction. Never load 60 at startup.

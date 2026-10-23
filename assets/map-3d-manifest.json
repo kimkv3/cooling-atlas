@@ -1,11 +1,11 @@
 {
-  "decision": 32,
+  "decision": 35,
   "status": "review_watermark_retained",
   "approach": "B video renderer snapshots; v1-v7 abandoned (Yongwoo 2026-10-21)",
-  "code_commit_sha": "da32dc120843295141edd9fbab8b53b1e1652f8f",
-  "generator_sha256": "sha256:3a3c384f910ad2933cd6c3afca68635419b42c28cbb9835fc9a877177c78de2b",
+  "code_commit_sha": "c34744bf5a577ea889470bfe4b7a9db957978a6f-dirty",
+  "generator_sha256": "sha256:909d35268ffe1404c04a3d765cf7bb5b8544be6974ac89211a4eccd76e8f8944",
   "renderer_dependencies_sha256": {
-    "cooling_3d.py": "sha256:266669e7c8407405b89be8f37116052a392f76c06a87fde1c3cb39182805f7a8",
+    "cooling_3d.py": "sha256:b332349b61cec6c1f1786ab62d18ba2c8e340e85e69062d2a7dcaca09111b1c8",
     "cooling_palette.py": "sha256:9726d742c43000fcf9555d3e8fe54c1e692ec309b6b45671e98fb9f4d37018c8",
     "render_static.py": "sha256:0f0d2241a1a75c701574ea92ab8b930bbc20107fc763ad7c9c77eac650fee9d0",
     "render_timelapse.py": "sha256:3cb7e94a20083c00d429ac11a0c5d23574ac3dd16c4497adf51fc6e9fc6a7ce8"
@@ -102,7 +102,7 @@
     "enabled": false,
     "rim": false
   },
-  "coastline": "B original reference and floor outlines",
+  "coastline": "B reference outline at z=0 only; duplicate floor outline removed",
   "background": "#f6f5ef",
   "missing": "47 gray zero-height markers; not zero values",
   "labels": "sea-side zero guide; projected north arrow; Jeju label follows cell height west of island",
@@ -110,8 +110,8 @@
   "colour_rule": "B loss: -110 dark blue, 0 blue, 125 white, 260 red; >=260 saturated",
   "mobile_decades": "2 columns x 3 rows; intact B frames; 12.25px period headings at 350px",
   "readability": "12px+ HTML unit/legend/period guide; click original for B frame fine print",
-  "installed_video_sha256": "sha256:da826b771ef6f898bf629bedece92bc1bae3db7b0988afcc7e7708c3d76195b8",
-  "installed_poster_sha256": "sha256:7d9c67f0ccb70ba7188e5a4b871b4d23feeec6ab6f4c3cedea8c4b0c28cb7168",
+  "installed_video_sha256": "sha256:d762ed5b52fa14e0f6278fcb9400b630598ead10cef3f5eea5dad79a1c19f746",
+  "installed_poster_sha256": "sha256:f472636f489dbab4921d313a059cb12527c4fd62a222367b0e86dbaca5153edc",
   "maps": {
     "sensitivity": {
       "depth_scale": {
@@ -317,40 +317,40 @@
   },
   "files": {
     "ench-loss-3d.png": {
-      "sha256": "sha256:8f22e60fd5308df172504ebd7618934da5c9b772c1903c80cde710b50f82751e",
-      "bytes": 142755,
+      "sha256": "sha256:78b0bdc4bf9dd4f385f41865cf58c425a01c94e9580042319706c0ffac8f3d37",
+      "bytes": 132906,
       "pixels": [
         1200,
         900
       ]
     },
     "nch20-loss-3d.png": {
-      "sha256": "sha256:7005d260bbc169d05d6384ab138cc1a5cfbf2d2fcd0af46b227b735946206f5f",
-      "bytes": 150383,
+      "sha256": "sha256:57ee871506c1d713d17f994c5a464ec413067403510b1f76ad47bcb81e94e257",
+      "bytes": 140653,
       "pixels": [
         1200,
         900
       ]
     },
     "sensitivity-3d.png": {
-      "sha256": "sha256:ff4ca60aeb56fb4c1506b1542620059cf577f30dcca33290bf1c094cf7499f58",
-      "bytes": 155641,
+      "sha256": "sha256:26518e949fb6bef78f4bbd4b4e8cd85a7eee2182522ca2ce3cd284584d6407f0",
+      "bytes": 147098,
       "pixels": [
         1200,
         900
       ]
     },
     "time-maps-3d-desktop.png": {
-      "sha256": "sha256:888884fdc7f7ac406230088944cb716fb349d594abef501ff1e6e3e575b1718d",
-      "bytes": 548899,
+      "sha256": "sha256:d014ac583849bc3b93346aabf3b29abd0959923316c2e4155cfe9463dea4a8c4",
+      "bytes": 526136,
       "pixels": [
         3600,
         2024
       ]
     },
     "time-maps-3d-mobile.png": {
-      "sha256": "sha256:b512088cb180fc721245f3d3a68ac9962ef9ae29b6debd05642ff8eb203bf70f",
-      "bytes": 645478,
+      "sha256": "sha256:cae3335246650f1aab1236a618287eb048c5919c6c29d3364e9b0ea1c566ab7c",
+      "bytes": 613567,
       "pixels": [
         2400,
         3036
@@ -358,12 +358,12 @@
     }
   },
   "snapshot_frames": {
-    "v10-frame-1961-1970.png": "sha256:154896f2452db734ebb61f83a7ec25b63c417afa40a40290e12754f0ad937d37",
-    "v10-frame-1971-1980.png": "sha256:e1a44c149c42c3ee8dd09432abdfffb2d7fc5434ba28f91ffc7b46dd76527e8c",
-    "v10-frame-1981-1990.png": "sha256:659cfd2eb3924e046cc353f2773616467f25166e817d1987c8a85c107a916133",
-    "v10-frame-1991-2000.png": "sha256:e5578955df323aeaf36a8dd195b3c38a3845ceee40efad6183edca3ddea84cd5",
-    "v10-frame-2001-2010.png": "sha256:09ad00a23621d7e32ee2148f29ebd2cdf150a06e472daebf9d7cd711b9a985ca",
-    "v10-frame-2011-2020.png": "sha256:3ed2bfa80429b52ca004e491dc4d8720d886c424e2f6a6f6f23c828c983dd461"
+    "v10-frame-1961-1970.png": "sha256:43aa300619d32c6a6e7ebca9c88d04c27c26fa3ea6986ded681ef49a87e346a2",
+    "v10-frame-1971-1980.png": "sha256:5297bdf88a180d7f21cb567e9003656ec10ee16bdf6b988cb413c82ea5804a7d",
+    "v10-frame-1981-1990.png": "sha256:5294e27d6b24ca506cc7d1ee054c091321ccd859d7bd385101d13a45b24ab380",
+    "v10-frame-1991-2000.png": "sha256:45ea450bd926309da0f95ead5b9f1892b2bbcc7d631a98585a5a3800baf6cfc8",
+    "v10-frame-2001-2010.png": "sha256:7f2d098e9177c8885c5d1f0fa9576b1cc0c5e4b6f2cf02b05135f11c3facf81f",
+    "v10-frame-2011-2020.png": "sha256:120b5e984984454a2050e22e9fb6cd2e5035a981f78ff3a3cf7e68e244b3a14c"
   },
   "poster_comparison": {
     "dimensions": [
@@ -371,18 +371,18 @@
       900
     ],
     "registration_or_resize": false,
-    "mean_absolute_channel_error_255": 2.1030527777777777,
-    "rmse_255": 2.430778910372375,
+    "mean_absolute_channel_error_255": 2.09813024691358,
+    "rmse_255": 2.417855390911132,
     "channel_error_p99_255": 7.0,
-    "fraction_pixels_max_channel_error_le_12": 0.9955333333333334,
+    "fraction_pixels_max_channel_error_le_12": 0.9956592592592592,
     "map_roi_xyxy": [
       290,
       175,
       990,
       735
     ],
-    "map_roi_mean_absolute_channel_error_255": 2.1403852040816327,
-    "map_roi_rmse_255": 2.468474183765827,
+    "map_roi_mean_absolute_channel_error_255": 2.1286215986394557,
+    "map_roi_rmse_255": 2.435078991301422,
     "reason": "new PNG is pre-encode RGBA; installed poster is decoded H.264 yuv420p CRF19",
     "tolerance": {
       "mae_lte": 3,
